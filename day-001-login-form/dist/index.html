@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<header>
+		<h1><i class="fa fa-cloud"></i> Floated Labels! <span>with Forms</span> <i class="fa fa-cloud"></i></h1>
+		<p>Floated labels allow us to design cleaner forms, in addition to adding some nice interaction!</p>
+		<h3>Follow me <i class="fa fa-twitter"></i> <a href="https://twitter.com/soulrider911" target="_blank">  @soulrider911</a></h3>
+	  </header>
+	  <form action="">
+		<!--  General -->
+		<div class="form-group">
+		  <h2 class="heading">General</h2>
+		  <div class="controls">
+			<input type="text" id="name" class="floatLabel" name="name">
+			<label for="name">Name</label>
+		  </div>
+		  <div class="controls">
+			<input type="email" id="email" class="floatLabel" name="email">
+			<label for="email">Email</label>
+		  </div>
+		</div>
+		<!--  Details -->
+		<div class="form-group">
+		  <h2 class="heading">Details</h2>
+		  <div class="controls">
+			<input type="tel" id="cell" class="floatLabel" name="cell">
+			<label for="cell">Celly</label>
+		  </div>
+		  <div class="controls">
+			<i class="fa fa-sort"></i>
+			<select class="floatLabel">
+			  <option value="blank"></option>
+			  <option value="Apple">Apple</option>
+			  <option value="Banana">Banana</option>
+			  <option value="Kiwi">Kiwi</option>
+			  <option value="Orange">Orange</option>
+			  <option value="Watermelon">Watermelon</option>
+			</select>
+			<label for="fruit">Favotire Fruit</label>
+		  </div>
+		</div>
+		<!--  More -->
+		<div class="form-group">
+		  <h2 class="heading">More!</h2>
+		  <div class="controls">
+			<textarea name="comments" class="floatLabel" id="comments"></textarea>
+			<label for="comments">Comments</label>
+			<button>Submit</button>
+		  </div>
+		</div>
+	  </form>
+
+</body>
+</html>

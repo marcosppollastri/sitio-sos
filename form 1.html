@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  margin: 2vw;
+  font-family: 'Poppins';
+  background-color: #BB0222;
+}
+
+.input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #BB0222;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=date], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #BB0222;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #BB0222;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+opacity: 0.5;
+}
+
+.formulary {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.formulary label {
+  position: relative;
+  top: 19px;
+  display: inline-block;
+  background-color: white;
+  margin-left: 10px;
+}
+
+
+
+</style>
+<body>
+
+<header><img src="./assets/logo.png" alt=""></header>
+
+<h3 style="display: flex; justify-content: center; flex-direction: row; color: white; font-size: 2vw;">Dejanos tu CV</h3>
+
+<section class="formulary">
+  <form action="/action_page.php">
+    <div style="display: flex; flex-direction: row; width: 100%;">
+<span style="display: flex; flex-direction: column; width: 33%; margin-right: 10px;"><span><label for="fname">Nombre</label></span>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+  </span>
+<span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="lname">Apellido</label></span>
+    <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
+  </span>
+  <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="date">Fecha de nacimiento</label></span>
+    <input type="date" id="date" name="date" placeholder="Tu fecha de nacimiento...">
+  </span>
+</div>
+
+<div style="display: flex; flex-direction: row; width: 100%;">
+  <span style="display: flex; flex-direction: column; width: 33%; margin-right: 10px;"><span><label for="fname">DNI</label></span>
+      <input type="text" id="fname" name="firstname" placeholder="Tu DNI...">
+    </span>
+    <div style="display: flex; flex-direction: column; width: 33%;">
+    <span><label for="country">Género</label></span>
+    <select id="country" name="country">
+      <option value="australia">Femenino</option>
+      <option value="canada">Masculino</option>
+      <option value="usa">Otro</option>
+    </select>
+  </div>
+
+    <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="date">Ciudad de residencia</label></span>
+      <input type="text" id="date" name="date" placeholder="Tu ciudad de residencia...">
+    </span>
+  </div>
+
+  <div style="display: flex; flex-direction: row; width: 100%;">
+    <span style="display: flex; flex-direction: column; width: 33%; margin-right: 10px;"><span><label for="fname">Provincia de residencia</label></span>
+        <input type="text" id="fname" name="firstname" placeholder="Tu provincia de residencia...">
+      </span>
+    <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="lname">Domicilio</label></span>
+        <input type="text" id="lname" name="lastname" placeholder="Tu domicilio...">
+      </span>
+      <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="date">Email</label></span>
+        <input type="text" id="date" name="date" placeholder="Tu email...">
+      </span>
+    </div>
+
+
+    <div style="display: flex; flex-direction: row; width: 100%;">
+      <span style="display: flex; flex-direction: column; width: 33%; margin-right: 10px;"><span><label for="fname">Teléfono</label></span>
+          <input type="text" id="fname" name="firstname" placeholder="Tu teléfono...">
+        </span>
+      <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="lname">Área</label></span>
+          <input type="text" id="lname" name="lastname" placeholder="Tu área...">
+        </span>
+        <span style="display: flex; flex-direction: column; width: 33%; margin-left: 10px;"><span><label for="date">Postulación para el puesto</label></span>
+          <input type="text" id="date" name="date" placeholder="Puesto que desea...">
+        </span>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <input style="width: 33%; display: flex; align-items: flex-end; justify-content: flex-end;" type="file" id="myFile" name="filename">
+   
+    <input style="width: 33%;" type="submit" value="Enviar">
+
+    <span style="width: 33%; margin-left: 20px;">Captcha placeholder</span>
+
+  </div>
+  </form>
+</div>
+
+</section>
+
+</body>
+</html>
