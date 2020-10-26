@@ -510,7 +510,7 @@
           </button>
         </div>
         <div class="modal-body" style="display: flex; flex-direction: row;">
-          <img src="./assets/covid1.jpg" alt="">
+          <img src="./assets/covid1.jpg" alt="" class="img-rounded">
           <div class="modal-text">
            <h4 style="color: red;">Covid-19</h4>
             <p>Queremos contarte cómo seguimos trabajando</p>
@@ -550,7 +550,7 @@
           </button>
         </div>
         <div class="modal-body" style="display: flex; flex-direction: row;">
-          <img src="./assets/sosrosa2.png" alt="">
+          <img src="./assets/sosrosa2.png" alt="" class="img-rounded">
           <div class="modal-text">
            <h4 style="color: red;">Web App</h4>
             <p>¡Seguimos innovando!</p>
@@ -579,7 +579,7 @@
           </button>
         </div>
         <div class="modal-body" style="display: flex; flex-direction: row;">
-          <img src="./assets/oficina2.jpg" alt="">
+          <img src="./assets/oficina2.jpg" alt="" class="img-rounded">          
           <div class="modal-text">
            <h4 style="color: red;">Mudanza sede Bs As</h4>
             <p>¡Un nuevo avance!</p>
@@ -752,7 +752,6 @@
 }
 
 .modal-text {
-  font-size: 1vw;
   font-weight: 300;
 }
 
@@ -774,8 +773,8 @@
           </div>
 
           <div class="modal-text" id="modalDatosUtilesText">
-            <div id="datosUtilesVehiculos" class="datosUtilesActive">
-              <h1 style="font-size: 1.6vw; font-weight: 600; color: red;">Datos útiles</h1>
+            <div id="datosUtilesVehiculos" class="datosUtilesActive modal-datos-utiles">
+              <h1 class="modal-datos-utiles-tittle">Datos útiles</h1>
               <h3>Vehículos</h3>
               <br>
               <ol>
@@ -822,13 +821,72 @@
               </ol>
             </div>
 
-            <div id="datosUtilesHogar" class="hidden">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam pariatur minus veniam aperiam, non autem aspernatur, voluptatibus at error debitis libero adipisci? Possimus ad inventore tenetur voluptate saepe quisquam eius?</p>
+            <div id="datosUtilesHogar" class="hidden modal-datos-utiles">
+              <h1 class="modal-datos-utiles-tittle">Datos útiles</h1>
+              <br>
+              <h3>Revisi&oacute;n del veh&iacute;culo</h3>
+              <br>
+              <h3>Hogar</h3>
+              <br>
+              <ol>
+              <li><strong>ELECTRICIDAD<br/></strong>Use luces de bajo consumo- Ahorran hasta un 75% de energ&iacute;a.<br />No exponga los artefactos al m&aacute;ximo de su potencia.<br/>Desconecte siempre la llave general para hacer una reparaci&oacute;n.</li>
+              <br>
+              <li><strong>CERRAJERÍA</strong>
+                <br/>Para que las cerraduras duren m&aacute;s tiempo, realice el mantenimiento frecuentemente.<br />Es recomendable tener por lo menos 2 copias de cada una de sus llaves.
+                <br/>Un llavero debe contar como m&aacute;ximo 3 llaves, as&iacute; evitar&aacute; da&ntilde;os y eventuales ca&iacute;das.
+                <br/>Instale en la puerta de su hogar un cerrojo de cadena, pudiendo as&iacute;, abrir la puerta de forma parcial.
+              </li>
+              <br>
+              <li><strong>PLOMER&Iacute;A</strong> 
+                <br/>Recuerde que el agua potable es un bien que escasea, no lo derroche, repare las goteras y p&eacute;rdidas en las ca&ntilde;er&iacute;as.<br/>
+                <ol>
+                  <li>¿Cómo silenciar una gotera de noche?
+                    <br>Ate un hilo al pico de la canilla o coloque un sorbete (pajita). El agua correrá sin ruido por estos hasta la pileta sin gotear.
+                  </li>
+                  <li>¿Cómo solucionar temporalmente una pérdida de caños a la vista?
+                    <br>Utilizando una cámara de bicicleta vieja. Se enrosca como una cinta adhesiva y se la va estirando mientras da vuelta al caño; cubra unos 10cm antes y después de la fisura. Otra opción es la colocación de un adhesivo, para lo cuál el caño debe estar bien seco.
+                  </li>
+                  <li>Evite Obstrucciones
+                    <br>No arroje elementos al inodoro, solo es el papel higiénico. Con respecto a las pastillas aromatizantes, lo ideal es colocarlas dentro dela mochila del inodoro.
+                  </li>
+                </ol>
+              </li>
+              </ol>
+
             </div>
 
-            <div id="datosUtilesNautica" class="hidden">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit, quaerat harum incidunt, ipsum excepturi illo assumenda officia, alias soluta ratione laudantium? Ad tempore nemo placeat ratione autem eum voluptatibus?</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit, quaerat harum incidunt, ipsum excepturi illo assumenda officia, alias soluta ratione laudantium? Ad tempore nemo placeat ratione autem eum voluptatibus?</p>
+            <div id="datosUtilesNautica" class="hidden modal-datos-utiles">
+              <h1 class="modal-datos-utiles-tittle">Datos útiles</h1>
+              <br>
+              <p>Los cabellos sueltos pueden tapar la pileta en cuestión de días. Para evitarlo, coloque una rejilla de trama pequeña, o bien, haga que todos en casa limpoien con una toalla de papel luego de peinarse. El jabón también puede tapar la tubería, así que procure usar la menor cantidad posible</p>
+              <h3><strong>NAÚTICA</strong></h3>
+              <br>
+              <ol>
+                <li>Antes de embarcarse a navegar, revise el buen funcionamiento de:
+                  <ul>
+                    <li>Equipos de navegación y comunicaciones.</li>
+                    <li>Motores, sistema eléctrico y niveles (aceite, combustible y agua).</li>
+                    <li>Aparejo.</li>
+                    <li>Equipo de seguridad.</li>
+                  </ul>
+                </li>
+                <br>
+                <li>Infórmese de la previsión meteorológica de la zona donde pretende navegar.</li>
+                <br>
+                <li>Realice un plan de navegación  y comuníquelo al club náutico</li>
+                <br>
+                <li>Informe las características de la embarcación, en el punto de salida y de destino:
+                  <ul>
+                    <li>Nombre del barco.</li>
+                    <li>Tripulación (datos de los mismos).</li>
+                    <li>Tipo, color, formas de las superestructuras, palos, etc.</li>
+                    <li>Nacionalidad y distitivo de llamada.</li>
+                    <li>Número y nombre las personas a bordo.</li>
+                    <li>Equipos de comunicaciones que se disponen.</li>
+                    <li>Teléfono de contacto y personas con las que contactar en caso de emergencia</li>
+                  </ul>
+                </li>
+              </ol>
             </div>
             
     

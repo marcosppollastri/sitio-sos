@@ -1117,6 +1117,7 @@ article h2 {
     }
     .modal-text {
       line-height: 10px;
+      font-size: 10pt;
     }
     .modal-body {
       display: flex;
@@ -1127,6 +1128,8 @@ article h2 {
    @media screen and (max-width: 370px) {
     .modal-text {
       line-height: 10px;
+      font-size: 3vw;
+
     }
     .modal p{
       margin: 0 0 5px;
@@ -1871,6 +1874,16 @@ box-shadow: 0.8vw 0.8vw 0.8vw 0px rgba(0,0,0,0.3);
 background-color: rgba(222, 222, 222);
 }
 
+.modal-datos-utiles-tittle{
+    font-size: 1.6vw; 
+    font-weight: 600; 
+    color: red;
+}
+
+.modal-datos-utiles ul>li {
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 900px){
     .modal-preview-tittle{
         font-size:13pt;
@@ -1886,4 +1899,8 @@ background-color: rgba(222, 222, 222);
     .modal-preview-button{
         font-size: 9pt;
     }
+}
+
+.img-rounded {
+    border-radius: 1vw;
 }
