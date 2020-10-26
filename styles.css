@@ -964,6 +964,7 @@ article h2 {
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
+    margin-bottom: 5%;
 
 }
 
@@ -1306,7 +1307,8 @@ margin-top: 25px;
 /* contact section */
 
 .contact {
-    padding: 50px 22vw;
+/*     padding: 50px 22vw;
+ */    margin-top: 50vw;
     background-color: #BB0222;
     position: relative;
 }
@@ -1839,5 +1841,49 @@ box-shadow: 0.8vw 0.8vw 0.8vw 0px rgba(0,0,0,0.3);
 .hidden {
     display: none;
 }
-.datosUtilesActive {
+.button-active{
+    color: grey;
+}
+
+.modal-preview-tittle{
+    font-weight: 600; 
+    font-size: 16pt; 
+    color: #333333;
+    line-height: 30pt;
+}
+
+.modal-preview-subtittle{
+    font-weight: 600; 
+    font-size: 13pt; 
+    color: #4D4D4D;
+    line-height: 30pt;
+}
+
+.modal-preview-text{
+    font-size: 12pt; line-height: 21pt; 
+      font-weight: 450;
+      color: #4D4D4D;
+}
+
+.modal-preview-button{
+    font-size: 12pt; font-weight: 600; color: #FF1D25;
+        margin-top: 5px; line-height: 21pt;
+background-color: rgba(222, 222, 222);
+}
+
+@media only screen and (max-width: 900px){
+    .modal-preview-tittle{
+        font-size:13pt;
+    }
+    .modal-preview-subtittle{
+        font-size: 13pt; 
+        font-weight: normal;
+
+    }
+    .modal-preview-text{
+        display:none;
+    }
+    .modal-preview-button{
+        font-size: 9pt;
+    }
 }
