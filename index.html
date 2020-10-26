@@ -460,7 +460,7 @@
 </div>
 
   <div class="grid-container">
-    <button class="left btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"></button>
+    <button class="left btn btn-primary" data-toggle="modal" data-target="#modalOficinas"</button>
     <div class="right-one" style="background-color: rgba(222, 222, 222);"></div>
     <div class="right-two"  style="background-color: rgba(222, 222, 222);"></div>
     <button class="right-image-one  btn btn-primary" style="margin-left: 20px;
@@ -470,7 +470,7 @@
     style="margin-left: 20px;
     margin-top: 30px; margin-right: 20px; margin-bottom: 0px;
     "
-    data-toggle="modal" data-target="#modalOficinas"></button>
+    data-toggle="modal" data-target="#exampleModalCenter"></button>
     <div class="right-text-one" style="padding-left: 0px;">
      <span style="font-weight: 600; font-size: 16pt; color: #333333;
      line-height: 30pt;
@@ -496,13 +496,14 @@ background-color: rgba(222, 222, 222);
 
     <div class="right-text-two" style="padding-left: 0px;">
       <span style="font-weight: 600; font-size: 16pt; color: #333333;
-      line-height: 30pt;">MUDANZA SEDE BS AS</span><br>
+      line-height: 30pt;">COVID-19</span><br>
       <span style="font-weight: 600; font-size: 13pt; color: #4D4D4D;
       line-height: 30pt;
-      ">¡Un nuevo avance!</span>
+      ">Queremos contarte cómo seguimos trabajando</span>
       <p style="font-size: 12pt; line-height: 21pt; 
       font-weight: 450;
-      color: #4D4D4D;">Desde agosto de 2020 nuestra sede Buenos Aires se trasladó al Distrito Tecnológico de la ciudad...
+      color: #4D4D4D;">Continuamos brindando todos nuestros servicios, respetando los protocolos de distanciamiento
+                 social dictaminados. 
         <br>
         <button
         style="font-size: 12pt; font-weight: 600; color: #FF1D25;
@@ -643,7 +644,7 @@ background-color: rgba(222, 222, 222);
       bottom: 5px;
       "></img>
     </a>
-    <h4>Prestadores</h4>
+    <h4>Prestadores y Proveedores</h4>
     <h5>Sé parte de nuestra red de prestadores    </h5>
   </li>
   <li>
@@ -674,22 +675,26 @@ background-color: rgba(222, 222, 222);
   <span style="color: #BB0222; font-weight: 600;">
     Sede Buenos Aires</span>
     <br>
-  Luna 49 <br>
-  11 2150 9200 <br>
-  recepcionbue@redsos.com.ar</button>
+    Luna 49 <br>
+    11 2150 9200 <br>
+    recepcionbue@redsos.com.ar
+  </button>
+
+  <button class="map-button" id="sede-cordoba" onclick="cordoba();">
+    <span style="color: #BB0222; font-weight: 600;">Sede Córdoba​</span> <br>
+        Sagrada Familia 502 <br>
+        351 553 6000 <br>
+        recepcioncba@redsos.com.ar 
+    </button>
 
  <button class="map-button" id="sede-rosario" onclick="rosario();">          
-          <span style="color: #BB0222; font-weight: 600;">Sede Rosario</span> <br>
-          Bv. Oroño 1368  <br>
-          341 522 0600 <br>
-          recepcionros@redsos.com.ar 
-           </button>
-           <button class="map-button" id="sede-cordoba" onclick="cordoba();">
-            <span style="color: #BB0222; font-weight: 600;">Sede Córdoba​</span> <br>
-               Sagrada Familia 502 <br>
-               351 553 6000 <br>
-               recepcioncba@redsos.com.ar 
-      </button>
+    <span style="color: #BB0222; font-weight: 600;">Sede Rosario</span> <br>
+    Bv. Oroño 1368  <br>
+    341 522 0600 <br>
+    recepcionros@redsos.com.ar 
+  </button>
+
+  
 
     </div>
       
@@ -774,72 +779,86 @@ background-color: rgba(222, 222, 222);
 
 
 <div id="myModal" class="modal">
-  
-    <div class="modal-content">
+  <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
 
-      <span class="close" id="close" style="align-self: flex-end;">&times;</span>
+          <span class="close" id="close" style="align-self: flex-end;">&times;</span>
 
-      <div class="modal-menu-and-text">
+          <div class="modal-menu-and-text">
 
-      <div class="modal-menu">
-       <button>Vehículos</button>
-       <button>Hogar</button>
-       <button>Náutica</button>
-      </div>
+          <div class="modal-menu">
+          <button onclick="changeDatosUtiles('#datosUtilesVehiculos')">Vehículos</button>
+          <button onclick="changeDatosUtiles('#datosUtilesHogar')">Hogar</button>
+          <button onclick="changeDatosUtiles('#datosUtilesNautica')">Náutica</button>
+          </div>
 
-      <div class="modal-text">
-        <h1 style="font-size: 1.6vw; font-weight: 600; color: red;">Datos útiles</h1>
-      <span>Vehículos</span>
-      <br>
-<ol>
-      <li> <b>
-      Documentación necesaria para circular</b></li>
-<ul>
-Documento Nacional de Identidad (DNI).
-<br>
-Cédula verde del vehículo.
-<br>
-Licencia de conductor en vigencia.
-<br>
-Comprobante del seguro del automotor al día.
-<br>Constancia de pago de las tres últimas patentes.
-<br>Constancia de Verificación Técnica Vehicular (VTV)
-</ul>
-<br>
-<li>
-  <b>
-No se puede trasladar vehículos con cédula verde vencida (válida únicamente para el titular del vehículo (Ley 14.430 Art. 30))
-</b>
-</li>
-<br>
-<li>
-  <b>
-Dos ocupantes mayores de 10 años pueden acompañar el traslado
-Los menores de 10 años deben ser trasladados por otros medios (Ley 24.449 Art. 40)
-</b>
-</li>
-<br>
-<li>
-  <b>
-Antes de salir a la ruta
-</b>
-</li>
-<ul>
-  Asegúrese de haber descansado antes de manejar o hacer pausas durante el tramo
-  <br>  Realice la revisión de fluídos, luces y estado de las pastillas de freno
-  <br>  Examine la presión de sus neumáticos
-  <br>  No cargue el techo del auto sin dispositivos adecuados
-  <br>Viaje a una velocidad promedio
-  <br>Asegure la distancia de frenado
-</ul>
-</ol>
+          <div class="modal-text" id="modalDatosUtilesText">
+            <div id="datosUtilesVehiculos" class="datosUtilesActive">
+              <h1 style="font-size: 1.6vw; font-weight: 600; color: red;">Datos útiles</h1>
+              <h3>Vehículos</h3>
+              <br>
+              <ol>
+                    <li> <b>
+                    Documentación necesaria para circular</b></li>
+              <ul>
+              Documento Nacional de Identidad (DNI).
+              <br>
+              Cédula verde del vehículo.
+              <br>
+              Licencia de conductor en vigencia.
+              <br>
+              Comprobante del seguro del automotor al día.
+              <br>Constancia de pago de las tres últimas patentes.
+              <br>Constancia de Verificación Técnica Vehicular (VTV)
+              </ul>
+              <br>
+              <li>
+                <b>
+              No se puede trasladar vehículos con cédula verde vencida (válida únicamente para el titular del vehículo (Ley 14.430 Art. 30))
+              </b>
+              </li>
+              <br>
+              <li>
+                <b>
+              Dos ocupantes mayores de 10 años pueden acompañar el traslado
+              Los menores de 10 años deben ser trasladados por otros medios (Ley 24.449 Art. 40)
+              </b>
+              </li>
+              <br>
+              <li>
+                <b>
+              Antes de salir a la ruta
+              </b>
+              </li>
+              <ul>
+                Asegúrese de haber descansado antes de manejar o hacer pausas durante el tramo
+                <br>  Realice la revisión de fluídos, luces y estado de las pastillas de freno
+                <br>  Examine la presión de sus neumáticos
+                <br>  No cargue el techo del auto sin dispositivos adecuados
+                <br>Viaje a una velocidad promedio
+                <br>Asegure la distancia de frenado
+              </ul>
+              </ol>
+            </div>
 
+            <div id="datosUtilesHogar" class="hidden">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam pariatur minus veniam aperiam, non autem aspernatur, voluptatibus at error debitis libero adipisci? Possimus ad inventore tenetur voluptate saepe quisquam eius?</p>
+            </div>
 
-      </div>
+            <div id="datosUtilesNautica" class="hidden">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit, quaerat harum incidunt, ipsum excepturi illo assumenda officia, alias soluta ratione laudantium? Ad tempore nemo placeat ratione autem eum voluptatibus?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit, quaerat harum incidunt, ipsum excepturi illo assumenda officia, alias soluta ratione laudantium? Ad tempore nemo placeat ratione autem eum voluptatibus?</p>
+            </div>
+            
+    
+
+          </div>
+
+        </div>
 
     </div>
-
-    </div>
+  </div>
+    
   
   </div>
 
@@ -935,6 +954,7 @@ function bsas() {
 <script src="./js/sosred.js"></script>
 <script src="./slick-1.8.1/slick/slick.js"></script>
 <script src="./slick-1.8.1/slick/slick.min.js"></script>
+<script src="./datosUtiles.js"></script>
 
 </body>
 

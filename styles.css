@@ -385,7 +385,7 @@ padding: 5px 10px 5px 10px;
 
 /*comunnicate section*/
 
-}
+
 .contact h3 {
     margin: 0px;
     font-size: 1.927vw;
@@ -1511,9 +1511,9 @@ display: flex; align-items: center;
 
 .page-footer {
     background-color: #BB0222;
-    padding-top: 125px;
-    padding-bottom: 65px;
-    font-size: 24px;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 25px;
     color: white;
 }
 
@@ -1834,4 +1834,10 @@ box-shadow: 0.8vw 0.8vw 0.8vw 0px rgba(0,0,0,0.3);
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.hidden {
+    display: none;
+}
+.datosUtilesActive {
 }
