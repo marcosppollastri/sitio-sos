@@ -85,7 +85,9 @@
             max-height: 2em;
         }
     }
-
+.hidden{
+    display: none;
+}
 /* .g-recaptcha{
     display: inline-block;
 } */
