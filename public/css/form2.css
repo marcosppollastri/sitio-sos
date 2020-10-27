@@ -1,0 +1,90 @@
+*{
+    font-family: 'Poppins';
+}
+
+.jumbotron{
+    background: none;
+}
+
+.center{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#input-cv{
+    display: none;
+}
+
+.page-footer {
+    background-color: #BB0222;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    float:bottom;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+
+.rights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    }
+    
+    .links a {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .links button:hover {
+        color: #13ADC6;
+        text-decoration: none; 
+    }
+    
+    .links a:hover {
+        color: #13ADC6;
+        text-decoration: none;
+    }
+    
+    .links button {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 24px;
+    }
+    @media screen and (max-width: 605px){
+        .navbar-logo{
+            max-height: 2em;
+        }
+    }
+/* .g-recaptcha{
+    display: inline-block;
+} */
