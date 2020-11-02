@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<link rel="stylesheet" href="./bootstrap.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -41,6 +41,8 @@
 <body>
 
   <header>
+
+
     <ul>
       <li><img id="logo" src="./assets/logo.png" alt=""></li>
       <li><a href="#home">Home</a></li>
@@ -48,7 +50,7 @@
       <li><a href="#quienes">Quiénes somos</a></li>
       <li><a href="#novedades">Novedades</a></li>
       <li><a href="#separte">Sé parte</a></li>
-      <li><a href="#portalposventa">Portal Posventa</a></li>
+      <li><a href="#portalpostventa">Portal Postventa</a></li>
     </ul>
   </header>
 
@@ -78,12 +80,12 @@
         </div>
   
         <div class="item">
-          <img src="./assets/banner-2.png" alt="Chicago" style="width:100%;">
+          <img src="./assets/banner-2-2.png" alt="Chicago" style="width:100%;">
           <div class="text-in-carousel-2">
-              <div>
+              <div class="banner-content-2">
                   <h1 class="banner-title">ASISTIMOS EN LOS <br>MOMENTOS CLAVES</h1>
                   <h2 class="banner-subtitle">¡Conocé todos nuestros servicios!</h2>
-                  <button class="banner-button">Ingrese aquí</button>
+                  <button class="banner-button" id="ingrese"><strong>Ingrese aquí</strong></button>
               </div>
           </div>
         </div>
@@ -91,10 +93,10 @@
         <div class="item">
           <img src="./assets/banner-3.png" alt="New York" style="width:100%;">
           <div class="text-in-carousel-3">
-              <div>
+              <div class="banner-content-3">
                   <h1 class="banner-title">SOMOS LA RED<br>MÁS GRANDE DEL PAÍS</h1>
                   <h2 class="banner-subtitle">¡Ingresá a nuestra web app!</h2>
-                  <button class="banner-button">Ingrese aquí</button>
+                  <button class="banner-button" id="ingrese"><strong>Ingrese aquí</strong></button>
               </div>
           </div>
         </div>
@@ -159,7 +161,7 @@
               <img src="./content/whatsapp.png" alt="whatsapp logo" class="small-img" id="hide">
                 <h3 class="contact-title">0800 333 6524</h3>
                 <p class="contact-p">Llamanos y ponete en contacto para que <br> podamos resolver tus problemas</p>
-                    <button class="hidden-button">Ingresar</button>
+                    <button onclick="window.location.href='tel:08003336524'" class="hidden-button">Llamar</button>
             </div>
         </div>
 
@@ -460,7 +462,21 @@
 </div>
 
   <div class="grid-container">
-    <button class="left btn btn-primary" data-toggle="modal" data-target="#modalOficinas"</button>
+    <button class="left btn btn-primary" data-toggle="modal" data-target="#modalOficinas" style="display: flex; flex-direction: column; justify-content: flex-end;
+    text-align: center; align-items: center; color: white; padding-bottom: 10px;
+    ">
+    
+    <span style="font-weight: 600;
+    font-size: 19pt;
+    color: white;
+    line-height: 30pt;">MUDANZA SEDE BS AS</span>
+     <span style="    font-weight: 600;
+     font-size: 16pt;
+     color: white;
+     line-height: 30pt;">¡Un nuevo avance!</span>
+
+
+     </button>
     <div class="right-one" style="background-color: rgba(222, 222, 222);"></div>
     <div class="right-two"  style="background-color: rgba(222, 222, 222);"></div>
     <button class="right-image-one  btn btn-primary" style="margin-left: 20px;
@@ -502,7 +518,7 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content" style="padding: 0px;">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -571,7 +587,7 @@
 
   <div class="modal fade" id="modalOficinas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="width: 70vw;">
+      <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -668,12 +684,17 @@
         recepcioncba@redsos.com.ar 
     </button>
 
- <button class="map-button" id="sede-rosario" onclick="rosario();">          
-    <span style="color: #BB0222; font-weight: 600;">Sede Rosario</span> <br>
-    Bv. Oroño 1368  <br>
-    341 522 0600 <br>
-    recepcionros@redsos.com.ar 
+  <button class="map-button" id="sede-rosario" onclick="rosario();">          
+      <span style="color: #BB0222; font-weight: 600;">Sede Rosario</span> <br>
+      Bv. Oroño 1368  <br>
+      341 522 0600 <br>
+      recepcionros@redsos.com.ar 
   </button>
+  <button class="map-button" id="sede-cipav" onclick="cipav();">          
+    <span style="color: #BB0222; font-weight: 600;">CIPAV <br>(Centro Integra de Prestadores de Asistencia Vehicular)</span> <br>
+    Av Intendente Francisco Rabanal 1732, CABA<br>
+
+</button>
 
   
 
@@ -823,13 +844,10 @@
 
             <div id="datosUtilesHogar" class="hidden modal-datos-utiles">
               <h1 class="modal-datos-utiles-tittle">Datos útiles</h1>
-              <br>
-              <h3>Revisi&oacute;n del veh&iacute;culo</h3>
-              <br>
               <h3>Hogar</h3>
               <br>
               <ol>
-              <li><strong>ELECTRICIDAD<br/></strong>Use luces de bajo consumo- Ahorran hasta un 75% de energ&iacute;a.<br />No exponga los artefactos al m&aacute;ximo de su potencia.<br/>Desconecte siempre la llave general para hacer una reparaci&oacute;n.</li>
+              <li><strong>ELECTRICIDAD<br/></strong>Use luces de bajo consumo. Ahorran hasta un 75% de energ&iacute;a.<br />Gradúe la temperatura de sus ambientes.<br />No exponga los artefactos al m&aacute;ximo de su potencia.<br/>Desconecte siempre la llave general para hacer una reparaci&oacute;n.</li>
               <br>
               <li><strong>CERRAJERÍA</strong>
                 <br/>Para que las cerraduras duren m&aacute;s tiempo, realice el mantenimiento frecuentemente.<br />Es recomendable tener por lo menos 2 copias de cada una de sus llaves.
@@ -847,8 +865,9 @@
                     <br>Utilizando una cámara de bicicleta vieja. Se enrosca como una cinta adhesiva y se la va estirando mientras da vuelta al caño; cubra unos 10cm antes y después de la fisura. Otra opción es la colocación de un adhesivo, para lo cuál el caño debe estar bien seco.
                   </li>
                   <li>Evite Obstrucciones
-                    <br>No arroje elementos al inodoro, solo es el papel higiénico. Con respecto a las pastillas aromatizantes, lo ideal es colocarlas dentro dela mochila del inodoro.
+                    <br>No arroje elementos al inodoro, solo es el papel higiénico. Con respecto a las pastillas aromatizantes, lo ideal es colocarlas dentro de la mochila del inodoro.
                   </li>
+<li>Los cabellos sueltos pueden tapar la pileta en cuestión de días. Para evitarlo, coloque una rejilla de trama pequeña, o bien, haga que todos en casa limpien con una toalla de papel luego de peinarse. El jabón también puede tapar la tubería, así que procure usar la menor cantidad posible</li>
                 </ol>
               </li>
               </ol>
@@ -857,9 +876,7 @@
 
             <div id="datosUtilesNautica" class="hidden modal-datos-utiles">
               <h1 class="modal-datos-utiles-tittle">Datos útiles</h1>
-              <br>
-              <p>Los cabellos sueltos pueden tapar la pileta en cuestión de días. Para evitarlo, coloque una rejilla de trama pequeña, o bien, haga que todos en casa limpoien con una toalla de papel luego de peinarse. El jabón también puede tapar la tubería, así que procure usar la menor cantidad posible</p>
-              <h3><strong>NAÚTICA</strong></h3>
+              <h3><strong>Náutica</strong></h3>
               <br>
               <ol>
                 <li>Antes de embarcarse a navegar, revise el buen funcionamiento de:
@@ -909,9 +926,8 @@
     <div class="links">
       <button id="myBtn" >Datos útiles</button>
       <a href="www.wikipedia.com">Sugerencias y reclamos</a>
-     <br>
     </div>
-    <div class="rights">
+    <div class="rights" style="padding-top: 1.5vw;">
       <p>
        <span><b>S.O.S Red de Asistencia</span> <span>Todos los derechos reservados</span></b></p>
       <p>Desarrollado por <a href="" style="color: white; text-decoration: none;"> Damsquad</a></p>
@@ -987,6 +1003,10 @@ function rosario() {
 function bsas() {
   map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7061746727595!2d-58.40290094898482!3d-34.63686476666428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb114945bca5%3A0x38e65d5c947bf926!2sLuna%2049%2C%20C1437FEC%20CABA!5e0!3m2!1ses!2sar!4v1602693207792!5m2!1ses!2sar";
 }  
+
+function cipav(){
+  map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.8955264287883!2d-58.42505768476897!3d-34.65734128044558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9c832d5d13%3A0x72866ea89264a3dd!2sAv.%20Int.%20Francisco%20Rabanal%201732%2C%20C1437%20CABA!5e0!3m2!1ses-419!2sar!4v1604290973992!5m2!1ses-419!2sar";
+}
 
 </script>
 
