@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Sans';
 }
 
 .jumbotron{
@@ -87,6 +89,38 @@
     }
 .hidden{
     display: none;
+}
+.tabla-numeros{
+    padding: 5vw;
+}
+
+.clientes-header {
+    background-color: #BB0222;
+    padding: 2vw;
+    color: white;
+}
+
+.numero-cliente {
+    text-align: center;
+    padding-top: 1vw;
+    padding-inline: 1vw;
+    height: 12vh;
+    margin-bottom: 1vh;
+    border-radius: 3px;
+    /* border: 1px solid grey; */
+}
+.numero-p{
+    margin-bottom: 0.1vh;
+    margin-top: 00.1vh;
+
+}
+
+.numero-a{
+    color: #BB0222;
+    text-decoration: none;
+}
+.column-first-element{
+    height: 19vh;
 }
 /* .g-recaptcha{
     display: inline-block;

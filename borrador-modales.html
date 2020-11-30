@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+
+
+</head>
+
+<style>
+
+* {
+font-family: 'Poppins';
+}
+
+.modal-0800 {
+  display: block;
+  width: 1080px;
+  max-width: 100%;
+  height: fit-content;
+  max-height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.modal-0800 img {
+  width: 8vw;
+  padding-bottom: 10px;
+}
+
+.closed {
+  display: none;
+}
+
+.modal-0800-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-guts-0800 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  background-color: white;
+}
+
+
+.modal-0800 .close-button-0800 {
+  position: absolute;
+  z-index: 1;
+  top: 0.1vw;
+  right: 0.8vw;
+  border: 0;
+  background: transparent;
+  color: black;
+  padding: 0.3vw 0.3vw;
+  font-size: 4vw;
+}
+
+.open-button {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: lightgreen;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 21px;
+}
+
+.clientes-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #E2001A;
+  color: white;
+  padding: 2vw;
+  width: 95%;
+  margin-bottom: 15px;
+  line-height: 1.5vw;
+  }
+
+.clientes-bar h1 {
+ font-size: 1.109vw;
+ padding: 0px;
+ margin: 0px;
+ font-weight: bold;
+}
+
+.clientes-bar h2 {
+  font-size: 0.992vw;
+  padding: 0px;
+ margin: 0px;
+ font-weight: 200;
+}
+
+.num-columns {
+  padding-left: 8.7vw;
+  padding-right: 8.7vw;
+}
+
+.num-col {
+  line-height: 1vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.num-col h3 {
+  font-size: 0.9vw;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  color: #4D4D4D;
+}
+
+.num-col h4 {
+  font-size: 0.9vw;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+
+#col1 {
+  margin-left: 100px;
+}
+
+#col4 {
+  margin-right: 100px;
+}
+
+.col-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+</style>
+
+<body>
+
+    <div class="modal-0800-overlay" id="modal-overlay"></div>
+
+    <div class="modal-0800" id="modal">
+      <button class="close-button-0800" id="close-button">x</button>
+      <div class="modal-guts-0800" style="width: 100%;">
+
+        <img src="./assets/logo.png" alt="">
+        <div class="clientes-bar">
+         <h1>Clientes</h1>
+         <h2>Nuestros clientes son nuestros mejores referentes y conforman una extensa nómina que representa nuestro mayor orgullo.</h2>
+        </div>
+
+        <div class="num-columns fl w-100">
+
+          <div class="num-col fl w-25">
+           <h3>AMCA / ORBIS</h3>
+           <h4>0 800 333 9111 / 0 800 666 0948 / 0 800 333 7755 / 0 800 999 0534</h4>
+         <h3>Argos</h3>
+         <h4>0 800 999 2746</h4>
+         <h3>Audi</h3>
+         <h4>0 800 999 2834</h4>
+         <h3>Berkley</h3>
+         <h4>0 800 555 0465</h4>
+         <h3>BMW</h3>
+         <h4>0 800 222 6927</h4>
+        <h3> Caruso</h3>
+         <h4>0 800 777 7348</h4>
+         <h3>Chrysler</h3>
+          <h4>0 800 333 3131
+         <h3</h4>>Citroën</h3>
+         <h4>0 800 222 4876</h4>
+         <h3>CNH Iveco</h3> 
+         <h4>0 800 444 8326</h4>
+          <h3>Cooperativa de Seguros Luz y Fuerza</h3>
+         <h4>0 800 333 2753</h4>
+         <h3>Dodge</h3>
+         <h4>0 800 444 8000</h4>
+          </div>
+
+          <div class="num-col fl w-25">
+           <h3>Ducati</h3>
+            <h4>0 800 777 3822</h4>
+           <h3>El Norte</h3>
+           <h4> 0 800 888 4652</h4>
+           <h3>Federación Patronal</h3>
+           <h4> 0 800 222 0022 / 0 800 444 0001</h4>
+           <h3>FIAT</h3>
+           <h4> 0 800 444 8000</h4>
+           <h3>Galeno</h3>
+           <h4> 0 800 777 5433</h4>
+           <h3>Instituto Provincial de Entre Ríos</h3>
+           <h4> 0 800 333 6524</h4>
+           <h3>Intégrity</h3>
+           <h4> 0 800 222 3700</h4>
+           <h3>Iúnigo</h3>
+           <h4> 011-4835-8111</h4>
+           <h3>Jaguar Assistance</h3>
+           <h4> 0 800 800 5248</h4>
+           <h3>Jeep</h3>
+           <h4> 0 800 444 8000</h4>
+           <h3>La Equitativa del Plata</h3>
+           <h4> 0 800 555 5337</h4>
+           <h3>La Holando</h3>
+           <h4> 0 800 999 0002</h4>
+          </div>
+
+          <div class="num-col fl w-25">
+          <h3>  La Perseverancia</h3>
+          <h4>  0 800 222 2577 </h4>
+           <h3> Land Rover</h3>
+           <h4> 0 800 888 5263</h4>
+           <h3> Mercantil Andina</h3>
+           <h4> 0 800 777 2634</h4>
+           <h3> Mercedes-Benz</h3>
+          <h4>  0 800 666 2369</h4>
+           <h3> Metropolitana</h3>
+           <h4> 0 800 555 0088</h4>
+          <h3>  Meridional</h3>
+           <h4> 0 800 800 4358</h4>
+           <h3> Mini</h3>
+           <h4> 0 800 333 6464</h4>
+          <h3>  Nación Seguros</h3>
+           <h4> 0 800 333 3300</h4>
+           <h3> PSA Peugeot</h3>
+           <h4> 0 800 222 4000</h4>
+           <h3> RAM</h3>
+           <h4> 0 800 444 8000</h4>
+           <h3> Rio Uruguay</h3>
+           <h4> 0 800 444 1441</h4>
+           <h3> Rivadavia</h3>
+          <h4>  0 800 666 6789</h4>
+          </div>
+
+          <div class="num-col fl w-25">
+           <h3> Santander </h3>
+           <h4> 0 800-999-2400 </h4>
+           <h3> Samcro Utilidad </h3>
+           <h4> 0 800 999 5122 </h4>
+           <h3> SeguroMetal </h3>
+           <h4> 0 800 888 8308 </h4>
+           <h3> Smart </h3>
+           <h4> 0 800 444 76278 </h4>
+           <h3> Sura Seguros </h3>
+           <h4> 0 800 999 76925 </h4>
+           <h3> TPC </h3>
+           <h4> 0 800 333 6524 </h4>
+           <h3> Victoria Seguros </h3>
+           <h4> 0 800 333 0990 </h4>
+           <h3> Volvo </h3>
+           <h4> 0 800 555 86586 </h4>
+           <h3> VW </h3>
+           <h4> 0800 666 3434 / 0800 888 8338 </h4>
+           <h3> VW Camiones y Buses </h3>
+           <h4> 0800 666 8922 </h4>
+           <h3> Zurich </h3>
+           <h4> 0800-222-1600 / 0800 444 </h4>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+    
+    <button id="open-button" class="open-button">Open Button</button>
+
+
+
+    <script>
+        var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
+
+closeButton.addEventListener("click", function() {
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+
+openButton.addEventListener("click", function() {
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+
+    </script>
+
+</body>
+</html>
