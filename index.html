@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.scss">
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick.scss">
+  <script src="https://kit.fontawesome.com/184184e7df.js" crossorigin="anonymous"></script>
 
   <title>SOS Red</title>
   <link rel="stylesheet" href="styles.css">
@@ -42,16 +43,20 @@
 
   <header>
 
-
-    <ul>
-      <li><img id="logo" src="./assets/logo.png" alt=""></li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#quienes">Quiénes somos</a></li>
-      <li><a href="#novedades">Novedades</a></li>
-      <li><a href="#separte">Sé parte</a></li>
-      <li><a href="#portalcorporativo">Portal Corporativo</a></li>
+    <img class="logo" src="./assets/logo.png" alt="">
+    <ul class="nav">
+      
+      <li class="navlink"><a href="#home">Home</a></li>
+      <li class="navlink"><a href="#servicios">Servicios</a></li>
+      <li class="navlink"><a href="#quienes">Quiénes somos</a></li>
+      <li class="navlink"><a href="#novedades">Novedades</a></li>
+      <li class="navlink"><a href="#separte">Sé parte</a></li>
+      <li class="navlink"><a href="#portalcorporativo">Portal Corporativo</a></li>
     </ul>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+
+    </div>
   </header>
 
    <section class="banner" id="home">
@@ -654,18 +659,21 @@
     la asignación de la asistencia en todo el país y países limítrofes, desde las tres sedes de
     la empresa (Buenos Aires, Rosario y Córdoba).</h5>
 </div>
-<div class="image-around"><img class="iram" src="./assets/IRAM Iso.JPG" alt=""></div>
-<div class="image-around"><img class="iq" src="./assets/IQ Net.jpg" alt=""></div>
+<div class="images-certificados">
+  <div class="image-around"><img class="iram" src="./assets/IRAM Iso.JPG" alt=""></div>
+  <div class="image-around"><img class="iq" src="./assets/IQ Net.jpg" alt=""></div>
+</div>
+
 </section>
 
 <section class="novedades" id="novedades">
 
   <div class="logos-title">
-  <h1>Novedades</h1>
-  <h2>Te contamos las últimas novedades y dónde obtener más información.</h2>
+    <h1>Novedades</h1>
+    <h2>Te contamos las últimas novedades y dónde obtener más información.</h2>
 </div>
 
-  <div class="grid-container">
+<div class="grid-container" id="novedades-desktop">
     <button class="left btn btn-primary" data-toggle="modal" data-target="#modalOficinas" style="display: flex; flex-direction: column; justify-content: flex-end;
     text-align: center; align-items: center; color: white; padding-bottom: 10px;
     ">
@@ -716,6 +724,35 @@
           Más información</button>
       </p>
     </div>
+
+</div>
+
+<div class="grid-container" id="novedades-mobile">
+
+  <div class="modal-mobile">
+    <button class="left btn btn-primary" data-toggle="modal" data-target="#modalOficinas">
+      <img src="./assets/oficina.jpg" alt="" srcset="">
+      <span class="modal-preview-tittle">MUDANZA SEDE BS AS</span>
+      <span class="modal-preview-subtittle">¡Un nuevo avance!</span>
+    </button>
+  </div>
+  <div class="modal-mobile">
+    <button class="left btn btn-primary" data-toggle="modal" data-target="#modalSOS">
+      <img src="./assets/sosrosa2.png" alt="" srcset="">
+      <span class="modal-preview-tittle">WEBAPP</span>
+      <span class="modal-preview-subtittle">¡Seguimos innovando!</span>
+    </button>
+  </div>
+
+  <div class="modal-mobile">
+    <button class="left btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      <img src="./assets/covid.jpg" alt="" srcset="">
+      <span class="modal-preview-tittle">COVID-19</span>
+      <span class="modal-preview-subtittle">Queremos contarte cómo seguimos trabajando</span>
+    </button>
+  </div>
+
+
   </div>
 
 
@@ -1218,6 +1255,7 @@ function cipav(){
 <script src="./slick-1.8.1/slick/slick.js"></script>
 <script src="./slick-1.8.1/slick/slick.min.js"></script>
 <script src="./datosUtiles.js"></script>
+<script src="./burger.js"></script>
 
 </body>
 
