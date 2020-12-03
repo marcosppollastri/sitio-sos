@@ -75,7 +75,7 @@
                   <h1 class="banner-title" style="font-size: 4vw !important; margin: 0px 0px 00px;">INNOVACIÓN TECNOLÓGICA CONSTANTE</h1>
                   <h2 class="banner-subtitle" style="padding-top: 0px; font-size: 2vw; padding-bottom: 5px;">¡Ingresá a nuestra WebApp!</h2>
                   <button onclick="window.location.href='https://tuasistencia.redsos.com.ar/home/login'"  class="banner-button banner-button-1"
-                  " id="ingrese"><strong>Ingrese aquí</strong></button>
+                  " id="ingrese"><strong class="center-text">Ingrese aquí</strong></button>
               </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
               <div class="banner-content-2">
                   <h1 class="banner-title">ASISTIMOS EN LOS <br>MOMENTOS CLAVES</h1>
                   <h2 class="banner-subtitle" >¡Conocé todos nuestras asistencias!</h2>
-                  <button onclick="window.location.href='#servicios'" class="banner-button" id="btn-servicios"><strong>Ingrese aquí</strong></button>
+                  <button onclick="window.location.href='#servicios'" class="banner-button" id="btn-servicios"><strong class="center-text">Ingrese aquí</strong></button>
               </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
               <div class="banner-content-3">
                   <h1 class="banner-title">SOMOS LA RED<br>MÁS GRANDE DEL PAÍS</h1>
                   <h2 class="banner-subtitle">¡Ingresá a nuestra WebApp!</h2>
-                  <button onclick="window.location.href='https://tuasistencia.redsos.com.ar/home/login'"  class="banner-button" id="ingrese"><strong>Ingrese aquí</strong></button>
+                  <button onclick="window.location.href='https://tuasistencia.redsos.com.ar/home/login'"  class="banner-button" id="ingrese"><strong class="center-text">Ingrese aquí</strong></button>
               </div>
           </div>
         </div>
@@ -118,8 +118,8 @@
 
 
     <div class="contact-header">
-      <h1>Línea directa por cliente</h1>
-      <h2 style="font-weight: 300;">Comunícate con nosotros de manera rápida y fácil</h2>
+      <h1>Comunícate con nosotros de manera rápida y fácil</h1>
+      <h2 style="font-weight: 300;"></h2>
     </div>
 
     <div class="contact-row">
@@ -180,86 +180,188 @@
 <div class="services-title">
   <h1>Nuestras Asistencias</h1>
 </div>
-  <div class="row">
-      <img class="zoom-in" src="./assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
-      <div class="services-box" id="vehicular-text">
-          <h1>Asistencia Vehicular</h1>
-          <h2>Circulá tranquilo con la tranquilidad de contar con la mejor asistencia las 24 hs. Servicios de urgencias mecánicas y traslados en todo el país para cualquier tipo de vehículo: automóviles, motos, camiones, para resolver cualquier desperfecto, siniestro o urgencia que pueda ocurrir.</h2>
-      </div>
-      <img src="./assets/services/Asistencia non-stop.jpg" id="non-stop" alt="">
-      <div class="services-box" id="non-stop-text">
-          <h1>Asistencia Non Stop</h1>
-          <h2>Circulá tranquilo. Te asistimos en la vía pública con tu bicicleta, monopatín o cualquier dispositivo de movilidad urbana. Te brindamos servicios para tu vehículo y para que puedas llegar a tu destino ante 
-              averías, accidentes o robos. </h2>
-      </div>
-      </div>
-  
-  <div class="row">
+<div id="services-grid-desktop">
+  <div class="row" id="services-row-1">
+    <img class="zoom-in" src="./assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
+    <div class="services-box" id="vehicular-text">
+        <h1>Asistencia Vehicular</h1>
+        <h2>Circulá tranquilo con la tranquilidad de contar con la mejor asistencia las 24 hs. Servicios de urgencias mecánicas y traslados en todo el país para cualquier tipo de vehículo: automóviles, motos, camiones, para resolver cualquier desperfecto, siniestro o urgencia que pueda ocurrir.</h2>
+    </div>
+    <img src="./assets/services/Asistencia non-stop.jpg" id="non-stop" alt="">
+    <div class="services-box" id="non-stop-text">
+        <h1>Asistencia Non Stop</h1>
+        <h2>Circulá tranquilo. Te asistimos en la vía pública con tu bicicleta, monopatín o cualquier dispositivo de movilidad urbana. Te brindamos servicios para tu vehículo y para que puedas llegar a tu destino ante 
+            averías, accidentes o robos. </h2>
+    </div>
+    
+</div>
+
+<div class="row" id="services-row-2">
+    <div class="services-box" id="hogar-text">
+        <h1>Asistencia al Hogar</h1>
+        <h2>¿Tuviste una urgencia en tu casa? ¿Necesitás una reparación? En SOS ponemos a tu disposición una amplia red de profesionales que llegarán a tu domicilio para solucionar cualquier problema de plomería, electricidad, gas, cerrajería y mucho más.   Nuestra red de prestadores te asistirá dentro de tu hogar para que puedas seguir disfrutándolo como siempre.
+        </h2>
+    </div>
+      <img src="./assets/services/Asistencia hogar.jpg" id="hogar" alt="">
+    <div class="services-box" id="nautica-text">
+      <h1>Asistencia Náutica</h1>
+      <h2>Ante cualquier inconveniente en la navegación, te brindamos el mejor servicio para la embarcación, desde asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras, así como también el rescate de todos los navegantes. Te cuidamos y acompañamos para que solo te preocupes por elegir el destino.
+      </h2>
+    </div>
+      <img src="./assets/services/Asistencia Nautica.jpg" id="nautica" alt="">
+
+ </div>
+
+<div class="row" id="services-row-3">
+    <img src="./assets/services/Asistencia de salud 2.jpg" alt="">
+    <div class="services-box">
+        <h1>Asistencia de Salud</h1>
+        <h2>La mejor cobertura de servicios de salud, para asistirte ante cualquier inconveniente médico. Servicio de ambulancia hasta el hospital más cercano, médicos especialistas, exámenes complementarios y mucho más para que estés protegido ante cualquier hecho fortuito. averías, accidentes o robos. 
+        </h2>
+    </div>        <img src="./assets/services/Asistencia de tecnologia.jpg" alt="">
+    <div class="services-box">
+        <h1>Asistencia en Tecnología</h1>
+        <h2>Estamos presentes ante cualquier problema que cualquiera de tus dispositivos pueda presentarte. Enviando la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma remota para arreglar o configurar sus dispositivos.  
+        </h2>
+    </div>
+</div>
+
+<div class="row" id="services-row-4">
+    <div class="services-box">
+        <h1>Asistencia en Viaje</h1>
+        <h2>Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante cualquier inconveniente que surja. Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al domicilio: soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que sigas viajando tranquilo en caso de tener un inconveniente con tu vehículo. 
+        </h2>
+    </div>        <img src="./assets/services/Asistencia Viaje.jpg" alt="">
+    <div class="services-box">
+        <h1>Asistencia a Mascotas</h1>
+        <h2>¿Tu mascota también necesita cuidado? Con nosotros, tu mascota cuenta con un amplio abanico de servicios que incluye hasta consultas médicas veterinarias. También cuenta con asistencia de vacunación y envío de medicamentos a domicilio después de un accidente o cirugía. Siempre limpio: cuida de tu mascota con el servicio de baño, peluquería y pipeta antipulgas. 
+        </h2>
+    </div>        <img src="./assets/services/Asistencia a mascotas.jpg" alt="">
+</div>
+
+<div class="row" id="services-row-5">
+    <img src="./assets/services/CONCIERGE SERVICE.jpg" alt="">
+    <div class="services-box">
+        <h1>Servicio de Concierge</h1>
+        <h2>Porque lo que más nos interesa es asistirte, te ayudamos a hacer tus reservaciones para restaurantes, comprar entradas para eventos, preparar las vacaciones soñadas, concertar lo necesario para tus actividades empresariales en el mundo entero, localizar artículos difíciles de encontrar, así como comprar y entregar regalos. 
+        </h2>
+    </div>        <img src="./assets/services/energy2.jpg" alt="">
+    <div class="services-box">
+        <h1>Servicio Energy</h1>
+        <h2> Brindamos una solución integral a nuestros clientes al momento de necesitar un cambio de batería. Integramos el servicio de asistencia a través de nuestros mecánicos especializados con un producto con la más alta calidad, lo que nos permite ofrecer una garantía de 18 meses. 
+        </h2>
+    </div>    </div>
+
+<div class="row" id="services-row-6">
+    <div class="services-box">
+        <h1>Telemedicina</h1>
+        <h2>¿Necesitas hacer una consulta médica? Contamos con una app exclusiva para realizar tu consulta médica a través de videollamada,  sin traslados ni esperas. Es una opción rápida y confiable para que realices tu consulta de salud u obtengas una segunda opinión médica, cuando lo necesites.
+        </h2>
+    </div>        <img src="./assets/services/Telemedicina.jpg" alt="">
+    <div class="services-box">
+        <h1>Tercera edad</h1>
+        <h2> Sabemos lo importante que es asistir en todo momento y cuando más lo necesitas. Por eso acercamos un producto para nuestros adultos mayores que los acompañará a resolver situaciones donde requieran asistencia.
+        </h2>
+    </div>        <img src="./assets/services/tercera edad.jpg" alt="">
+</div>
+
+</div>
+<div id="services-grid-mobile">
+  <div class="row" id="services-row-1">
+    <img class="zoom-in" src="./assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
+    <div class="services-box" id="vehicular-text">
+        <h1>Asistencia Vehicular</h1>
+        <h2>Circulá tranquilo con la tranquilidad de contar con la mejor asistencia las 24 hs. Servicios de urgencias mecánicas y traslados en todo el país para cualquier tipo de vehículo: automóviles, motos, camiones, para resolver cualquier desperfecto, siniestro o urgencia que pueda ocurrir.</h2>
+    </div>
+    <div class="services-box" id="non-stop-text">
+        <h1>Asistencia Non Stop</h1>
+        <h2>Circulá tranquilo. Te asistimos en la vía pública con tu bicicleta, monopatín o cualquier dispositivo de movilidad urbana. Te brindamos servicios para tu vehículo y para que puedas llegar a tu destino ante 
+            averías, accidentes o robos. </h2>
+    </div>
+    <img src="./assets/services/Asistencia non-stop.jpg" id="non-stop" alt="">
+    
+</div>
+
+<div class="row" id="services-row-2">
+
+      <img src="./assets/services/Asistencia hogar.jpg" id="hogar" alt="">
       <div class="services-box" id="hogar-text">
-          <h1>Asistencia al Hogar</h1>
-          <h2>¿Tuviste una urgencia en tu casa? ¿Necesitás una reparación? En SOS ponemos a tu disposición una amplia red de profesionales que llegarán a tu domicilio para solucionar cualquier problema de plomería, electricidad, gas, cerrajería y mucho más.   Nuestra red de prestadores te asistirá dentro de tu hogar para que puedas seguir disfrutándolo como siempre.
-          </h2>
-      </div>
-              <img src="./assets/services/Asistencia hogar.jpg" id="hogar" alt="">
-      <div class="services-box" id="nautica-text">
-          <h1>Asistencia Náutica</h1>
-          <h2>Ante cualquier inconveniente en la navegación, te brindamos el mejor servicio para la embarcación, desde asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras, así como también el rescate de todos los navegantes. Te cuidamos y acompañamos para que solo te preocupes por elegir el destino.
-          </h2>
-      </div>
-              <img src="./assets/services/Asistencia Nautica.jpg" id="nautica" alt="">
+        <h1>Asistencia al Hogar</h1>
+        <h2>¿Tuviste una urgencia en tu casa? ¿Necesitás una reparación? En SOS ponemos a tu disposición una amplia red de profesionales que llegarán a tu domicilio para solucionar cualquier problema de plomería, electricidad, gas, cerrajería y mucho más.   Nuestra red de prestadores te asistirá dentro de tu hogar para que puedas seguir disfrutándolo como siempre.
+        </h2>
+    </div>
+    <div class="services-box" id="nautica-text">
+      <h1>Asistencia Náutica</h1>
+      <h2>Ante cualquier inconveniente en la navegación, te brindamos el mejor servicio para la embarcación, desde asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras, así como también el rescate de todos los navegantes. Te cuidamos y acompañamos para que solo te preocupes por elegir el destino.
+      </h2>
+    </div>
+      <img src="./assets/services/Asistencia Nautica.jpg" id="nautica" alt="">
+
+ </div>
+
+<div class="row" id="services-row-3">
+    <img src="./assets/services/Asistencia de salud 2.jpg" alt="">
+    <div class="services-box">
+        <h1>Asistencia de Salud</h1>
+        <h2>La mejor cobertura de servicios de salud, para asistirte ante cualquier inconveniente médico. Servicio de ambulancia hasta el hospital más cercano, médicos especialistas, exámenes complementarios y mucho más para que estés protegido ante cualquier hecho fortuito. averías, accidentes o robos. 
+        </h2>
+    </div>        
+    <div class="services-box">
+        <h1>Asistencia en Tecnología</h1>
+        <h2>Estamos presentes ante cualquier problema que cualquiera de tus dispositivos pueda presentarte. Enviando la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma remota para arreglar o configurar sus dispositivos.  
+        </h2>
+    </div>
+    <img src="./assets/services/Asistencia de tecnologia.jpg" alt="">
+</div>
+
+<div class="row" id="services-row-4">
+    <img src="./assets/services/Asistencia Viaje.jpg" alt="">
+    <div class="services-box">
+        <h1>Asistencia en Viaje</h1>
+        <h2>Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante cualquier inconveniente que surja. Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al domicilio: soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que sigas viajando tranquilo en caso de tener un inconveniente con tu vehículo. 
+        </h2>
+    </div>        
+    <div class="services-box">
+        <h1>Asistencia a Mascotas</h1>
+        <h2>¿Tu mascota también necesita cuidado? Con nosotros, tu mascota cuenta con un amplio abanico de servicios que incluye hasta consultas médicas veterinarias. También cuenta con asistencia de vacunación y envío de medicamentos a domicilio después de un accidente o cirugía. Siempre limpio: cuida de tu mascota con el servicio de baño, peluquería y pipeta antipulgas. 
+        </h2>
+    </div>        <img src="./assets/services/Asistencia a mascotas.jpg" alt="">
+</div>
+
+<div class="row" id="services-row-5">
+  <img src="./assets/services/CONCIERGE SERVICE.jpg" alt="">
+
+    <div class="services-box">
+        <h1>Servicio de Concierge</h1>
+        <h2>Porque lo que más nos interesa es asistirte, te ayudamos a hacer tus reservaciones para restaurantes, comprar entradas para eventos, preparar las vacaciones soñadas, concertar lo necesario para tus actividades empresariales en el mundo entero, localizar artículos difíciles de encontrar, así como comprar y entregar regalos. 
+        </h2>
+    </div> 
+           
+    <div class="services-box">
+        <h1>Servicio Energy</h1>
+        <h2> Brindamos una solución integral a nuestros clientes al momento de necesitar un cambio de batería. Integramos el servicio de asistencia a través de nuestros mecánicos especializados con un producto con la más alta calidad, lo que nos permite ofrecer una garantía de 18 meses. 
+        </h2>
+    </div>
+    <img src="./assets/services/energy2.jpg" alt="">
+
   </div>
 
-  <div class="row">
-      <img src="./assets/services/Asistencia de salud 2.jpg" alt="">
-      <div class="services-box">
-          <h1>Asistencia de Salud</h1>
-          <h2>La mejor cobertura de servicios de salud, para asistirte ante cualquier inconveniente médico. Servicio de ambulancia hasta el hospital más cercano, médicos especialistas, exámenes complementarios y mucho más para que estés protegido ante cualquier hecho fortuito. averías, accidentes o robos. 
-          </h2>
-      </div>        <img src="./assets/services/Asistencia de tecnologia.jpg" alt="">
-      <div class="services-box">
-          <h1>Asistencia en Tecnología</h1>
-          <h2>Estamos presentes ante cualquier problema que cualquiera de tus dispositivos pueda presentarte. Enviando la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma remota para arreglar o configurar sus dispositivos.  
-          </h2>
-      </div>    </div>
+<div class="row" id="services-row-6">
+  <img src="./assets/services/Telemedicina.jpg" alt="">
+    <div class="services-box">
+        <h1>Telemedicina</h1>
+        <h2>¿Necesitas hacer una consulta médica? Contamos con una app exclusiva para realizar tu consulta médica a través de videollamada,  sin traslados ni esperas. Es una opción rápida y confiable para que realices tu consulta de salud u obtengas una segunda opinión médica, cuando lo necesites.
+        </h2>
+    </div>        
+    <div class="services-box">
+        <h1>Tercera edad</h1>
+        <h2> Sabemos lo importante que es asistir en todo momento y cuando más lo necesitas. Por eso acercamos un producto para nuestros adultos mayores que los acompañará a resolver situaciones donde requieran asistencia.
+        </h2>
+    </div>        <img src="./assets/services/tercera edad.jpg" alt="">
+</div>
 
-  <div class="row">
-      <div class="services-box">
-          <h1>Asistencia en Viaje</h1>
-          <h2>Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante cualquier inconveniente que surja. Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al domicilio: soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que sigas viajando tranquilo en caso de tener un inconveniente con tu vehículo. 
-          </h2>
-      </div>        <img src="./assets/services/Asistencia Viaje.jpg" alt="">
-      <div class="services-box">
-          <h1>Asistencia a Mascotas</h1>
-          <h2>¿Tu mascota también necesita cuidado? Con nosotros, tu mascota cuenta con un amplio abanico de servicios que incluye hasta consultas médicas veterinarias. También cuenta con asistencia de vacunación y envío de medicamentos a domicilio después de un accidente o cirugía. Siempre limpio: cuida de tu mascota con el servicio de baño, peluquería y pipeta antipulgas. 
-          </h2>
-      </div>        <img src="./assets/services/Asistencia a mascotas.jpg" alt="">
-  </div>
+</div>
 
-  <div class="row">
-      <img src="./assets/services/CONCIERGE SERVICE.jpg" alt="">
-      <div class="services-box">
-          <h1>Servicio de Concierge</h1>
-          <h2>Porque lo que más nos interesa es asistirte, te ayudamos a hacer tus reservaciones para restaurantes, comprar entradas para eventos, preparar las vacaciones soñadas, concertar lo necesario para tus actividades empresariales en el mundo entero, localizar artículos difíciles de encontrar, así como comprar y entregar regalos. 
-          </h2>
-      </div>        <img src="./assets/services/energy2.jpg" alt="">
-      <div class="services-box">
-          <h1>Servicio Energy</h1>
-          <h2> Brindamos una solución integral a nuestros clientes al momento de necesitar un cambio de batería. Integramos el servicio de asistencia a través de nuestros mecánicos especializados con un producto con la más alta calidad, lo que nos permite ofrecer una garantía de 18 meses. 
-          </h2>
-      </div>    </div>
-
-  <div class="row">
-      <div class="services-box">
-          <h1>Telemedicina</h1>
-          <h2>¿Necesitas hacer una consulta médica? Contamos con una app exclusiva para realizar tu consulta médica a través de videollamada,  sin traslados ni esperas. Es una opción rápida y confiable para que realices tu consulta de salud u obtengas una segunda opinión médica, cuando lo necesites.
-          </h2>
-      </div>        <img src="./assets/services/Telemedicina.jpg" alt="">
-      <div class="services-box">
-          <h1>Tercera edad</h1>
-          <h2> Sabemos lo importante que es asistir en todo momento y cuando más lo necesitas. Por eso acercamos un producto para nuestros adultos mayores que los acompañará a resolver situaciones donde requieran asistencia.
-          </h2>
-      </div>        <img src="./assets/services/tercera edad.jpg" alt="">
-  </div>
 
 </section>
 
@@ -286,104 +388,199 @@
 
   <div class="cards-title">
     <h1>LA EMPRESA</h1>
-    <h2>Con centrales operativas en Córdoba, Rosario y Buenos Aires y bases de servicio en todo el país, 
+    <h2 id="text-la-empresa">Con centrales operativas en Córdoba, Rosario y Buenos Aires y bases de servicio en todo el país, 
       somos pioneros en la incorporación de soluciones tecnológicas para estar en constante acercamiento 
       con nuestros clientes y brindar soluciones inmediatas.
       Estamos presentes en los momentos claves para brindarte desde el primer contacto hasta el último minuto una atención destacada, un servicio de excelencia y la mejor experiencia que un servicio de asistencia puede brindarte.
     </h2>
   </div>
 
-  <div class="card-container" style="background-color: white;">
-    <div class="two-div">
-
-      <div class="one-div">
-        <img src="./assets/24 horas.jpg" alt="" style="width: 100%; max-height: auto;">
-      </div>
-
-      <div class="one-div">
-        <div class="flip-card" style="width: 100%; height: 100%;">
-          <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
-            <div class="flip-card-front" style="width: 100%; max-height: 100%;">
-              <img src="./content/Exported/100 por ciento.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
-            </div>
-            <div class="flip-card-back">
-              <img src="./content/Exported/Garantía.png" alt="Garantía" style="width: 100%; max-height: 100%;">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="one-div">
-        <img src="./assets/camion_carga.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
-      </div>
-
-      <div class="one-div">
-        <div class="flip-card" style="width: 100%; height: 100%;">
-          <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
-            <div class="flip-card-front" style="width: 100%; max-height: 100%;">
-              <img src="./content/Exported/24 hs.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
-            </div>
-            <div class="flip-card-back">
-              <img src="./content/Exported/A tu disposición.png" alt="Garantía" style="width: 100%; max-height: 100%;">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      
-    </div>
-    </div>
-
-
-    <div class="card-container">
+  <div id="company-grid-desktop">
+    <div class="card-container" style="background-color: white;">
       <div class="two-div">
-
+  
+        <div class="one-div">
+          <img src="./assets/24 horas.jpg" alt="" style="width: 100%; max-height: auto;">
+        </div>
+  
         <div class="one-div">
           <div class="flip-card" style="width: 100%; height: 100%;">
             <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
               <div class="flip-card-front" style="width: 100%; max-height: 100%;">
-                <img src="./content/Exported/mas30.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/100 por ciento.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
               </div>
               <div class="flip-card-back">
-                <img src="./content/Exported/De experiencia.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/Garantía.png" alt="Garantía" style="width: 100%; max-height: 100%;">
               </div>
             </div>
           </div>
         </div>
-
-
-
-
+  
         <div class="one-div">
-          <img src="./assets/moto.png" alt="" style="width: 100%; max-height: auto;">
+          <img src="./assets/camion_carga.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
         </div>
-
-
-
-        
+  
         <div class="one-div">
           <div class="flip-card" style="width: 100%; height: 100%;">
             <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
               <div class="flip-card-front" style="width: 100%; max-height: 100%;">
-                <img src="./content/Exported/1 millon.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/24 hs.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
               </div>
               <div class="flip-card-back">
-                <img src="./content/Exported/personas-asistidas.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/A tu disposición.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        
+      </div>
+    </div>
+  
+    <div class="card-container">
+        <div class="two-div">
+  
+          <div class="one-div">
+            <div class="flip-card" style="width: 100%; height: 100%;">
+              <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+                <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                  <img src="./content/Exported/mas30.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./content/Exported/De experiencia.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+          <div class="one-div">
+            <img src="./assets/moto.png" alt="" style="width: 100%; max-height: auto;">
+          </div>
+  
+  
+  
+          
+          <div class="one-div">
+            <div class="flip-card" style="width: 100%; height: 100%;">
+              <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+                <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                  <img src="./content/Exported/1 millon.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./content/Exported/personas-asistidas.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="one-div">
+            <img src="./assets/1 millon.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
+          </div>
+  
+  
+  
+          
+        </div>
+    </div>
+  </div>
+  <div id="company-grid-mobile">
+    <div class="card-container" style="background-color: white;">
+      <div class="two-div">
+  
+        <div class="one-div">
+          <div class="flip-card" style="width: 100%; height: 100%;">
+            <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+              <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/100 por ciento.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+              </div>
+              <div class="flip-card-back">
+                <img src="./content/Exported/Garantía.png" alt="Garantía" style="width: 100%; max-height: 100%;">
               </div>
             </div>
           </div>
         </div>
-
         <div class="one-div">
-          <img src="./assets/1 millon.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
+          <img src="./assets/24 horas.jpg" alt="" style="width: 100%; max-height: auto;">
         </div>
+  
 
-
-
+  
+        <div class="one-div">
+          <img src="./assets/camion_carga.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
+        </div>
+  
+        <div class="one-div">
+          <div class="flip-card" style="width: 100%; height: 100%;">
+            <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+              <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                <img src="./content/Exported/24 hs.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+              </div>
+              <div class="flip-card-back">
+                <img src="./content/Exported/A tu disposición.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
         
       </div>
-      </div>
+    </div>
+  
+    <div class="card-container">
+        <div class="two-div">
+  
+          <div class="one-div">
+            <div class="flip-card" style="width: 100%; height: 100%;">
+              <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+                <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                  <img src="./content/Exported/mas30.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./content/Exported/De experiencia.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+          <div class="one-div">
+            <img src="./assets/moto.png" alt="" style="width: 100%; max-height: auto;">
+          </div>
+  
+  
+  
+          <div class="one-div">
+            <img src="./assets/1 millon.jpg" alt="Dos personas" style="width: 100%; max-height: auto;">
+          </div>
+  
+          <div class="one-div">
+            <div class="flip-card" style="width: 100%; height: 100%;">
+              <div class="flip-card-inner" style="width: 100%; max-height: 100%;">
+                <div class="flip-card-front" style="width: 100%; max-height: 100%;">
+                  <img src="./content/Exported/1 millon.png" alt="Cien por ciento" style="width: 100%; max-height: 100%;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./content/Exported/personas-asistidas.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+  
+  
+          
+        </div>
+    </div>
+  </div>
+
 
   
 
@@ -711,7 +908,7 @@
 
         <iframe id="map-content"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.712801250126!2d-64.23620044937992!3d-31.394481681320233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298cee4accd5d%3A0x4eaa0527b9470853!2sAv.%20Sagrada%20Familia%20502%2C%20X5003FGL%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1602692475575!5m2!1ses!2sar"
-         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
 
       </div>
 
@@ -932,7 +1129,7 @@
   
     <div class="links">
       <button id="myBtn" >Datos útiles</button>
-      <a href="www.wikipedia.com">Sugerencias y reclamos</a>
+      <a href="www.wikipedia.com">Sugerencias y comentarios</a>
     </div>
     <div class="rights" style="padding-top: 1.5vw;">
       <p>

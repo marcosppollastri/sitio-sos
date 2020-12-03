@@ -167,17 +167,26 @@ position: absolute;
         font-size: 3.5vw;
     }
     .banner .banner-button {
-        margin-top: 2vw;
+        /* margin-top: 2vw; */
         background-color: white;
         color: #DE001A;
         font-family: 'Poppins';
-        font-size: 7pt;
-        padding-bottom: 6vw;
-        max-width: 35vw;
-        max-height: 5vw;
+        font-size: 2vw;
+        /* padding-bottom: 6vw; */
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 5vw;
+        width: 20vw;
+        height: 4vw;
         border-radius: 20px;
         border: none;
         }
+    .center-text{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
     
 
 }
@@ -586,14 +595,14 @@ padding: 5px 10px 5px 10px;
     width: 6.354vw;
     margin-top: 1vw;
     font-size: 0.625vw;
-    border-radius: 0.7vw;
+    border-radius: 2vw;
     border-color: white;
     padding: 0px;
     border-width: 0px;
     height: 2vw;
     color: #DE001D;
     background-color: white;
-    opacity: 0;
+    opacity: 100;
 }
 
 .contact-column:hover button {
@@ -611,7 +620,7 @@ padding: 5px 10px 5px 10px;
 }
 
 .contact-column:hover .small-img {
-    opacity: 0;
+    opacity: 100;
     -webkit-transition-property: opacity;
     -o-transition-property: opacity;
     transition-property: opacity;
@@ -652,8 +661,9 @@ padding: 5px 10px 5px 10px;
 /*paso a vertical*/
 
 @media screen and (max-width: 768px) {
+
     .contact-column {
-width: 100%;
+width: 100vw;
 height: 50vw;
 }
 #contact-1 {
@@ -937,6 +947,7 @@ article h2 {
     padding-bottom: 60px;
     padding-right: 220px;
     padding-left: 220px;
+    
 }
 
 .logos-title h1 {
@@ -953,8 +964,8 @@ article h2 {
 
 @media screen and (max-width: 815px) {
     .logos-title {
-        padding-top: 38px;
-        padding-bottom: 10.5px;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
         padding-left: 40.75px;
         padding-right: 40.75px;
     }
@@ -1580,6 +1591,20 @@ display: flex; align-items: center;
       width: 50vw;
       margin-top: 2vw;
     }
+    .contact {
+        padding-inline: 5vw;
+       
+           background-color: #BB0222;
+           position: relative;
+       }
+    .contact-column-text img{
+        width: 6vw;
+        height: 6vw;
+
+    }
+    .contact-column-text{
+        padding: 5vw;
+    }
   }
 
 
@@ -2018,4 +2043,43 @@ background-color: rgba(222, 222, 222);
 
         font-size: 4vw;
     }
+
+}
+.center-text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+#services-grid-mobile{
+    display: none;
+}
+
+#company-grid-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 996px){
+    #services-grid-mobile{
+        display: inline;
+    }
+    #services-grid-desktop{
+        display: none;
+    }
+    #company-grid-mobile{
+        display: inline;
+    }
+    #company-grid-desktop{
+        display: none;
+    }
+}
+#text-la-empresa{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 996px){
+
+
 }

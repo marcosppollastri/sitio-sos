@@ -105,7 +105,7 @@
     padding-top: 1vw;
     padding-inline: 1vw;
     height: 12vh;
-    margin-bottom: 1vh;
+    margin-bottom: 1rem;
     border-radius: 3px;
     /* border: 1px solid grey; */
 }
@@ -121,6 +121,17 @@
 }
 .column-first-element{
     height: 19vh;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 605px){
+    .column-first-element{
+        height: inherit;
+        margin-bottom: 10vw;
+    }
+    .numero-cliente{
+        margin-bottom: 20px;
+    }
 }
 /* .g-recaptcha{
     display: inline-block;
