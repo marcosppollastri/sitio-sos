@@ -12,6 +12,11 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
+    
+
+}
+header{
+    background-color: #333333;
 }
 
 body {
@@ -20,6 +25,9 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     border: none;
+}
+.btn{
+    background-color: inherit;
 }
 
 
@@ -32,9 +40,9 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 20px;
     
-  }
+  } */
 
-  header ul {
+  /* header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -48,52 +56,14 @@ body {
 
   header ul li:hover {
     color: #BB0222;
-  }
+  } */
 
 #logo {
   padding-left: 5vw;
   padding-right: 24vw;
   width: 10vw;
-} */
+}
 
-header {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: unset;
-    justify-content: space-around;
-    background: #232323;
-    color: #ccc;
-    }
-    .logo {
-    letter-spacing: 3px;
-    display: flex;
-    float: left;
-    max-height: 60%;
-    /* align-items: center;
-    justify-content: center; */
-    padding: 1em;
-
-    }
-    .nav {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    transition: all 400ms;
-    }
-    .navlink {
-    list-style: none;
-    margin: 0;
-    }
-    .navlink a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 1.2em;
-    }
-    .burger {
-    font-size: 1.2em;
-    display: none;
-    }
 
 .banner .carousel-caption {
     display: flex;
@@ -170,14 +140,20 @@ position: absolute;
 
 
 @media only screen and (max-width: 900px){
-    
-    /* header{
+/*     
+    header{
         position: absolute;
+        display: block;
         height: 5vw;
         padding: 1vw;
-    }
-    header a{
+        z-index: 50;
+    } */
+    /* header a{
         display: none;
+    } */
+    /* header nav{
+        display: block;
+        margin-bottom: 100px;
     } */
     .banner {
         margin-top: auto;
@@ -237,13 +213,13 @@ position: absolute;
     width: 100%;
 }
 
-/* .logo {
+.logo {
     position: absolute;
     z-index: 1;
     margin-left: 4.325vw;
     margin-top: 4.323vw;
     width: 10.417vw;
-} */
+}
 
 
 .navbar {
@@ -2128,29 +2104,6 @@ background-color: rgba(222, 222, 222);
 }
 
 
-@media screen and (max-width: 678px) {
-    .burger{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav {
-        margin: 0;
-        background: #343434;
-        position: fixed;
-        right: 0;
-        top: 70px;
-        width: 50%;
-        height: calc(100% - 70px);
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0;
-        }
-        .navlink {
-        text-align: center;
-        }
-
-}
 @media only screen and (max-width: 996px){
     .normas-iso{
         flex-direction: column;
@@ -2186,6 +2139,8 @@ background-color: rgba(222, 222, 222);
         background-position: top;
         height: inherit;
         width: inherit;
+        box-shadow: none;
+        background-color: #dedede;
     }
 
     .modal-preview-tittle{
@@ -2232,6 +2187,27 @@ background-color: rgba(222, 222, 222);
 
 }
 
-.nav-active {
-    right: 0;
+header nav {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-material .nav-wrapper .brand-logo img {
+    height: 64px;
+  }
+  .navbar-material .nav-wrapper .button-collapse i {
+    color: #333333;
+  }
+  @media (max-width: 600px) {
+    .navbar-material .nav-wrapper .brand-logo img {
+      height: 56px;
+      /* padding: 50% !important; */
+    }
+  }
+
+.sidenav{
+    background-color: #333333;
+}
+
+.sidenav li > a {
+    color: white;
 }
