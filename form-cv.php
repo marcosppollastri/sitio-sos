@@ -147,10 +147,10 @@
                     </div>
                     <div class="form-row mt-2">
                         
-                        <div class="col-12 text-center">
+                        <div class="col-12">
                             <div class="form-group">
                                 <div class="form-row">
-                                    <div class="col text-center"><label for="cv" class="">Curriculum Vitae</label>
+                                    <div class="col"><label for="cv" class="">Curriculum Vitae</label>
                                     </div>
                                 </div>
                                 
@@ -179,12 +179,12 @@
                     <div class="form-row mt-2">
                         <div class="col recaptcha">
                             <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                            <small>Recaptcha será implementado y centrado en el futuro</small>
+                            <!-- <small>Recaptcha será implementado y centrado en el futuro</small> -->
                         </div>
                         
                     </div>
                     <div class="form-row mt-2">
-                        <div class="col text-center">
+                        <div class="col">
                             <button type="submit" class="btn btn-lg btn-danger">Enviar</button>
                         </div>
                         

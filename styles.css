@@ -2123,12 +2123,17 @@ background-color: rgba(222, 222, 222);
     .iso-text {
         padding-right: 5vw;
         padding-left: 5vw;
-        text-align: center;
+        text-align: justify;
+        
     }
     .iso-text h4{
+        padding-right: 5vw;
+        padding-left: 5vw;
         font-size: 15pt;
     }
     .iso-text h5{
+        padding-right: 5vw;
+        padding-left: 5vw;
         font-size: 10pt;
         /* text-align: justify; */
         padding: 3vw;

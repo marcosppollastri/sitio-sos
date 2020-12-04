@@ -1,3 +1,48 @@
+<?php
+
+$errors = [];
+$errorMessage = '';
+
+if (!empty($_POST)) {
+    $name = $_POST['nombre'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
+    }
+
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
+
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
+
+
+    if (empty($errors)) {
+        $toEmail = 'marcos.p.pollastri@gmail.com';
+        $emailSubject = 'Nuevo email desde formulario de comentarios';
+        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $body = join(PHP_EOL, $bodyParagraphs);
+
+        if (mail($toEmail, $emailSubject, $body, $headers)) {
+            header('Location: index.html');
+        } else {
+            $errorMessage = 'Hubo un error al enviar el correo. Intentelo nuevamente.';
+        }
+    } else {
+        $allErrors = join('<br/>', $errors);
+        $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +51,7 @@
     <title>SOS - Dejanos tu comentario</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/form2.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
 </head>
 <body>
@@ -19,6 +64,8 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h3 class="text-center">Trabajamos en tus comentarios sobre nuestros servicios</h3>
+            <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+
             <div class="container">
                 <form action="#" method="post">
                     <!-- first row -->
@@ -103,8 +150,8 @@
                         
                         <div class="col-md-12 col-xs-12">
                             <div class="form-group">
-                              <label for="mensaje">Mensaje</label>
-                              <textarea  rows=4 type="textarea" class="form-control" name="mensaje" id="" aria-describedby="helpId" placeholder="Escribanos un mensaje de algun otro detalle que quiera agregar..."></textarea>
+                              <label for="message">Mensaje</label>
+                              <textarea  rows=4 type="textarea" class="form-control" name="message" id="" aria-describedby="helpId" placeholder="Escribanos un mensaje de algun otro detalle que quiera agregar..."></textarea>
                             </div>
                         </div>
                         
@@ -112,7 +159,7 @@
                     <!-- fifth row -->
                     <div class="form-row mt-2">
                         
-                        <div class="col-12 text-center">
+                        <div class="col-12">
                             <div class="form-group">
                                 <label class="hidden" for="file">Seleccionar archivo</label>
                               <input type="file" class="form-control-file hidden" name="file" id="input-file" placeholder="" aria-describedby="fileHelpId">
@@ -123,13 +170,13 @@
                     </div>
                     <div class="form-row mt-2">
                         <div class="col">
-                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                            <small>Recatcha será implementado y centrado en el futuro</small>
+                            <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+                            <!-- <small>Recatcha será implementado y centrado en el futuro</small> -->
                         </div>
                         
                     </div>
                     <div class="form-row mt-2">
-                        <div class="col text-center">
+                        <div class="col">
                             <button type="submit" class="btn btn-lg btn-danger">Enviar</button>
                         </div>
                         
