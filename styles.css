@@ -186,21 +186,18 @@ position: absolute;
         color: #DE001A;
         font-family: 'Poppins';
         font-size: 2vw;
-        /* padding-bottom: 6vw; */
-        padding-left: 1vw;
-        padding-right: 1vw;
-        padding-bottom: 5vw;
+        padding: 0.5em 1em 0.5em 1em;
+
         width: 20vw;
-        height: 4vw;
+        height: 5vw;
         border-radius: 20px;
         border: none;
         }
-    .center-text{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
+    /* .center-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
     
 
 }
@@ -1628,7 +1625,7 @@ display: flex; align-items: center;
     background-color: #BB0222;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    font-size: 1.5vw;
+    font-size: 13pt;
     color: white;
 }
 
@@ -1674,7 +1671,7 @@ display: flex;
     color: white;
     text-decoration: none;
     background-color: transparent;
-    font-size: 1.5vw;
+    font-size: 13pt;
 }
 
 .rights {
@@ -1702,6 +1699,10 @@ display: flex;
     .page-footer {
         padding-top: 2rem;
         padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
     }
 
     .page-footer {
@@ -1710,6 +1711,16 @@ display: flex;
 
     .links button {
         font-size: 3vw;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .rights{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -2145,18 +2156,29 @@ background-color: rgba(222, 222, 222);
 
     .modal-preview-tittle{
         display: flex;
-        justify-content: center;
+        text-align: left;
         align-items: center;
+        font-size: 12pt;
+        padding-left: 5%;
+        padding-right: 5%;
     
     }
 
     .modal-preview-subtittle{
         display: flex;
-        justify-content: center;
+        text-align: left;
         align-items: center;
+        font-size: 10pt;
         padding-left: 5%;
         padding-right: 5%;
-        padding-bottom: 5%;
+        /* padding-bottom: 5%; */
+    }
+
+    .modal-preview-mobile-text{
+        text-align: left;
+        font-size: 8pt;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .modal-mobile{
         display: flex; 
@@ -2166,7 +2188,7 @@ background-color: rgba(222, 222, 222);
         align-items: center;
         padding-bottom: 1vw;
         margin-bottom: 5vw;
-        height: 50vh;
+        height: 70vh;
         width: 100%;
     }
     .modal-mobile img{
@@ -2182,6 +2204,16 @@ background-color: rgba(222, 222, 222);
         justify-content: flex-end;
         text-align: center; 
         align-items: center;
+    }
+    .modal-preview-link{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        font-size: 10pt;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: red;
+
     }
 
 
