@@ -2248,3 +2248,7 @@ header nav {
 .sidenav li > a {
     color: white;
 }
+
+header li{
+    list-style-type: none;
+}

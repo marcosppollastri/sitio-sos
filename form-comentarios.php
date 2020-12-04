@@ -5,11 +5,18 @@ $errorMessage = '';
 
 if (!empty($_POST)) {
     $name = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $localidad = $_POST['localidad'];
+    $patente = $_POST['patente'];
+    $company = $_POST['company'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $celular = $_POST['celular'];
+    $telefono = $_POST['telefono'];
+    $preferencia_contacto = $_POST['preferencia-contacto'];
 
     if (empty($name)) {
-        $errors[] = 'Name is empty';
+        $errors[] = 'Complete el campo nombre';
     }
 
     if (empty($email)) {
@@ -24,16 +31,23 @@ if (!empty($_POST)) {
 
 
     if (empty($errors)) {
-        $toEmail = 'marcos.p.pollastri@gmail.com';
+        $toEmail = 'mesadeentradas@redsos.com.ar';
         $emailSubject = 'Nuevo email desde formulario de comentarios';
 // Para enviar un correo HTML, debe establecerse la cabecera Content-type
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-        // Cabeceras adicionales
-        $headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
-
-        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $bodyParagraphs = [
+            "Nombre: {$name}", 
+            "Apellido: {$apellido}",
+            "Localidad: {$localidad}",
+            "Patente: {$patente}",
+            "Compañia: {$company}",
+            "Celular: {$celular}",
+            "Telefono: {$telefono}",
+            "Email: {$email}",
+            "Preferencia de Contacto: {$preferencia_contacto}",
+            "Mensaje: {$message}",
+        ];
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
@@ -108,9 +122,9 @@ if (!empty($_POST)) {
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="form-group">
-                                <label for="compañia">Compañia</label>
+                                <label for="company">Compañia</label>
                                 <input type="text"
-                                  class="form-control" name="compañia" id="" aria-describedby="helpId" placeholder="Ingrese su compañia">
+                                  class="form-control" name="company" id="" aria-describedby="helpId" placeholder="Ingrese su compañia">
                               </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
@@ -143,9 +157,9 @@ if (!empty($_POST)) {
                             <div class="form-group">
                               <label for="preferencia-contacto">Preferencia de contacto</label>
                               <select class="form-control" name="preferencia-contacto" id="">
-                                <option>Opción de contacto 1</option>
-                                <option>Opción de contacto 2</option>
-                                <option>Opción de contacto 3</option>
+                                <option>Telefono</option>
+                                <option>Mail</option>
+                                <option>Celular</option>
                               </select>
                             </div>
                         </div>
@@ -168,7 +182,7 @@ if (!empty($_POST)) {
                             <div class="form-group">
                                 <label class="hidden" for="file">Seleccionar archivo</label>
                               <input type="file" class="form-control-file hidden" name="file" id="input-file" placeholder="" aria-describedby="fileHelpId">
-                              <input type="button" class="btn btn-secondary" value="Seleccionar archivo" onclick="document.getElementById('input-file').click();" />
+                              <input type="button" class="btn btn-secondary" value="Seleccionar archivo" onclick="document.getElementById('input-file').click();">
                             </div>
                         </div>
 
