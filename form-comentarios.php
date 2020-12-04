@@ -26,7 +26,12 @@ if (!empty($_POST)) {
     if (empty($errors)) {
         $toEmail = 'marcos.p.pollastri@gmail.com';
         $emailSubject = 'Nuevo email desde formulario de comentarios';
-        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+// Para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        // Cabeceras adicionales
+        $headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
 
         $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
         $body = join(PHP_EOL, $bodyParagraphs);
