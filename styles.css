@@ -249,6 +249,49 @@ position: absolute;
     }
 }
 
+
+.close {
+    opacity: 0.9;
+}
+.close span {
+    font-family: times;
+font-size: 25px;
+padding: 10px;
+top: 5px;
+position: relative;
+color: black !important;
+}
+
+.modal-text {
+    padding-top: 60px;
+    line-height: 23px !important;
+}
+
+@media screen and (min-width: 768px) {
+.modal-dialog {
+    margin: 200px;
+}
+.modal-body img {
+    max-height: 40vw !important;
+}
+}
+
+.navlink {
+    padding-right: 10px;
+}
+
+.navlink a {
+    text-decoration: none;
+    height: 45px;
+}
+.navlink a:hover {
+    border-bottom: 2px solid red;
+}
+.map-button:focus {
+    outline: none;
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 900px){
 /*     
     header{
