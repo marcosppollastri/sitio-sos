@@ -12,9 +12,31 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
-    
-
 }
+
+button:focus {
+    outline: none;
+}
+
+
+.modal-header {
+    z-index: 20;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portal-corporativo {
+    display: none;
+}
+
+#profile {
+    display: none;
+}
+
 header{
     background-color: #333333;
 }
@@ -161,6 +183,54 @@ position: absolute;
 }
 
 @media screen and (max-width: 768px) {
+    #portal-corporativo {
+        display: flex;
+        font-size: 9px;
+    text-decoration: none;
+    line-height: 12px;
+    padding: 5px;
+    }
+
+    .carousel-indicators li {
+        height: 5px;
+        width: 5px;
+    }
+
+    .carousel-indicators .active {
+        width: 6px;
+        height: 6px;
+    }
+
+    .map h1 {
+        font-size: 20px !important;
+        padding-bottom: 1vw !important;
+    }
+
+    .brand-logo {
+        height: 65px;
+        margin-top: 3px;
+    }
+
+    .sidenav {
+        right: 0;
+        padding-top: 30px;
+    }
+    #profile {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .mobile-container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-between;
+      }
+
+    #portal {
+        display: none;
+    }
+
     .customer-logos {
         padding-bottom: 50px !important;
     }
@@ -1326,6 +1396,12 @@ article h2 {
   
  }
 
+ 
+.under-subtitle a {
+    text-decoration: none;
+    color: gray;
+}
+
 .modal-text  {
     font-weight: 300;
     width: fit-content;
@@ -2242,6 +2318,7 @@ background-color: rgba(222, 222, 222);
     display: none;
 }
 
+
 @media only screen and (max-width: 996px){
     #services-grid-mobile{
         display: inline;
@@ -2259,7 +2336,6 @@ background-color: rgba(222, 222, 222);
         display: flex;
         flex-direction: column;
         margin-left: 0px;
-        margin-right: 18px;
     }
     #novedades-desktop{
         display: none;
@@ -2383,6 +2459,7 @@ header nav {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+
 .navbar-material .nav-wrapper .brand-logo img {
     height: 64px;
   }
@@ -2397,7 +2474,7 @@ header nav {
   }
 
 .sidenav{
-    background-color: #333333;
+    background-color: rgba(180, 0, 0);
 }
 
 .sidenav li > a {
