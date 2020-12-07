@@ -31,8 +31,6 @@
 
 </head>
 
-
-
 <body>
 
   <header>
@@ -732,8 +730,8 @@
   <section class="normas-iso">
     <div class="iso-text">
       <h4>Certificamos normas IRAM ISO 9001:2015 desde hace +10 años</h4>
-      <h5>Alcance: Coordinación del servicio de asistencia a personas, vehículos, embarcaciones y
-        hogar, para compañías de seguros y terminales automotrices (asociados y clientes de
+      <h5>Alcance: Coordinación del servicio de asistencia a personas, vehículos, hogar y embarcaciones,
+         para compañías de seguros y terminales automotrices (asociados y clientes de
         éstas), contemplando los procesos necesarios para gestionar la solicitud del cliente hasta
         la asignación de la asistencia en todo el país y países limítrofes, desde las tres sedes de
         la empresa (Buenos Aires, Rosario y Córdoba).</h5>
@@ -810,8 +808,9 @@
           <img src="./assets/oficina.jpg" alt="" srcset="">
           <span class="modal-preview-tittle">MUDANZA SEDE BS AS</span>
           <span class="modal-preview-subtittle">¡Un nuevo avance!</span>
-          <p class="modal-preview-mobile-text">Desarrollamos nuestra WebApp con tecnología PWA, para que puedas realizar
-            el pedido de tu servicio desde cualquier dispositivo...</p>
+          <p class="modal-preview-mobile-text">
+            Desde agosto de 2020, nuestra sede de Buenos Aires se trasladó al distrito
+            tecnológico de la ciudad. Así, nuestras nuevas oficinas de Luna 49 cuentan con...</p>
           <span class="modal-preview-link">Más información</span>
         </button>
       </div>
@@ -856,7 +855,7 @@
             <img src="./assets/covid1.jpg" alt="" class="img-rounded">
             <div class="modal-text">
               <h4 style="color: red;">Covid-19</h4>
-              <p>Queremos contarte cómo seguimos trabajando</p>
+              <p class="subtitle-modal">Queremos contarte cómo seguimos trabajando</p>
               <ul>
                 <li>Continuamos brindando todos nuestros servicios, respetando los protocolos de distanciamiento
                   social dictaminados.
@@ -867,7 +866,7 @@
                 </li>
                 <li>Para servicios de asistencia vehicular, el personal de la salud y aquellos que estén
                   comprendidos dentro de los servicios esenciales tienen prioridad. Para ello, a través del
-                  1128080012 solicitamos que nos envíen el permiso de circulación para validar la excepción.
+                  1128080012 solicitamos que nos envíen el permiso de circulación para validar la excepción. <br>
                   Recordamos que en ningún caso los clientes podrán acompañar al vehículo en el móvil. Los traslados
                   son locales y acordes a la normativa de cada municipio.
                 </li>
@@ -896,11 +895,11 @@
             </button>
           </div>
           <div class="modal-body" style="display: flex; flex-direction: row;">
-            <img src="./assets/sosrosa2.png" alt="" class="img-rounded">
+            <img id="sosRosa" src="./assets/sosrosa2.png" alt="" class="img-rounded">
             <div class="modal-text">
               <h4 style="color: red;">WebApp</h4>
-              <p>¡Seguimos innovando!</p>
-              <p>
+              <p class="subtitle-modal">¡Seguimos innovando!</p>
+              <p class="under-subtitle">
                 Desarrollamos nuestra WebApp con tecnología PWA, para que puedas
                 realizar el pedido de tu servicio desde cualquier dispositivo, sin necesidad
                 de descargar ninguna app ni realizar ningún llamado. <br>
@@ -930,8 +929,8 @@
             <img src="./assets/oficina2.jpg" alt="" class="img-rounded">
             <div class="modal-text">
               <h4 style="color: red;">Mudanza sede Bs As</h4>
-              <p>¡Un nuevo avance!</p>
-              <p>
+              <p class="subtitle-modal">¡Un nuevo avance!</p>
+              <p class="under-subtitle">
                 Desde agosto de 2020, nuestra sede de Buenos Aires se trasladó al distrito
                 tecnológico de la ciudad. Así, nuestras nuevas oficinas de Luna 49 cuentan con
                 tecnología avanzada en comunicaciones, servidores y disponibilidad, para ofrecerte
@@ -1043,80 +1042,6 @@
 
 
   </section>
-
-  <style>
-    .modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-      background-color: #fefefe;
-      margin: 15% auto;
-      /* 15% from the top and centered */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 60%;
-      /* Could be more or less, depending on screen size */
-      display: flex;
-      padding: 4vw;
-    }
-
-    /* The Close Button */
-    .close {
-      color: darkgray;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .modal-menu-and-text {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .modal-menu {
-      padding-top: 3vw;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .modal-menu button {
-      margin-bottom: 5px;
-      background-color: transparent;
-      color: red;
-      font-weight: 700;
-    }
-
-    .modal-text {
-      font-weight: 300;
-    }
-  </style>
 
 
   <div id="myModal" class="modal">
