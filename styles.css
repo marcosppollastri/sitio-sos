@@ -151,6 +151,38 @@ position: absolute;
     max-width: 100vw;
 }
 
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 70vw;
+}
+
+.modal-menu-and-text {
+    display: flex;
+}
+
+.modal-content .close {
+    margin: 10px;
+}
+
+.modal-menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.modal-menu button {
+    background-color: transparent;
+    color: #DE001A;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#datosUtilesHogar li {
+    margin-top: 5px;
+}
+
 @media screen and (min-width: 768px) {
     #contact-1 button,
     #contact-2 button,
@@ -190,6 +222,54 @@ position: absolute;
     line-height: 12px;
     padding: 5px;
     }
+    .modal-content{
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+#datosUtilesVehiculos {
+    font-size: 12px;
+}
+#datosUtilesVehiculos li {
+    font-size: 12px;
+}
+#datosUtilesVehiculos ul {
+    font-size: 12px;
+}
+#datosUtilesVehiculos ol {
+    font-size: 12px;
+}
+
+#datosUtilesHogar {
+    font-size: 12px;
+}
+#datosUtilesHogar li {
+    font-size: 12px;
+}
+#datosUtilesHogar ul {
+    font-size: 12px;
+}
+#datosUtilesHogar ol {
+    font-size: 12px;
+}
+
+
+#datosUtilesNautica {
+    font-size: 12px;
+}
+#datosUtilesNautica li {
+    font-size: 12px;
+}
+#datosUtilesNautica ul {
+    font-size: 12px;
+}
+#datosUtilesNautica ol {
+    font-size: 12px;
+}
+
+#datosUtilesNautica ol {
+    margin-top: 10px;
+}
+
 
     .carousel-indicators li {
         height: 5px;
@@ -254,8 +334,7 @@ position: absolute;
         margin: 8px;
     }
     .modal-content {
-        width: 90vw !important;
-        background-color: #dedede;
+        background-color: white;
     }
     .modal-body {
         flex-direction: column !important;
@@ -333,13 +412,19 @@ color: black !important;
 }
 
 .modal-text {
-    padding-top: 60px;
+    padding-top: 10px;
     line-height: 23px !important;
+    padding-bottom: 30px;
+}
+
+#myModal {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media screen and (min-width: 768px) {
 .modal-dialog {
-    margin: 200px;
+    margin: 20px;
 }
 .modal-body img {
     max-height: 40vw !important;
@@ -1432,6 +1517,7 @@ article h2 {
   .modal-body img {
     max-height: 59vw;
   }
+
   
   @media screen and (max-width: 768px) {
     .modal-dialog {
