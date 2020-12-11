@@ -15,12 +15,33 @@
         background-color: rgba(0, 0, 0, 0.3) !important; 
         color: white !important;
     }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    #topbar button {
+        height: 50px;
+        background-color: transparent;
+        border: 2px solid #BB0222;
+        border-radius: 5px;
+        padding: 0px 25px;
+    }
 </style>
 
 <body>
     <nav class="navbar navbar-expand navbar-light bg-transparent">
-        <div class="ml-4 mt-4">
+        <div id="topbar" class="ml-4 mt-4">
             <a href="#" class="navbar-brand"><img class="navbar-logo" src="./assets/logo.png" alt="" srcset=""></a>
+            <button value="Back" onclick="window.history.back()" class="volver">Volver</button>
         </div>
         
     </nav>

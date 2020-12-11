@@ -758,7 +758,7 @@ padding: 5px 10px 5px 10px;
 .contact-column-text {
     position: absolute;
     padding-left: 1.438vw;
-    padding-top: 8.156vw;
+    padding-top: 4.156vw;
     padding-bottom: 4vw;
     font-size: 1vw;
 }
@@ -837,6 +837,11 @@ padding: 5px 10px 5px 10px;
     color: #DE001D;
     background-color: white;
     opacity: 100;
+}
+
+.hidden-button a {
+    color: #DE001D;
+    text-decoration: none;
 }
 
 .contact-column:hover button {
@@ -1776,6 +1781,29 @@ display: flex; align-items: center;
     color: #4D4D4D;
   }
 
+  .map-button:hover {
+      background-color: rgba(237, 28, 36, 0.3);
+  }
+
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
 
   #map-content {
     width: 582px;
