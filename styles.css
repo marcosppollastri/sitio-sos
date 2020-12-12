@@ -103,6 +103,11 @@ height: 45px;
 border: none;
 }
 
+.banner .banner-button a {
+    color: #DE001A;
+    text-decoration: none;
+}
+
 .banner .text-in-carousel-2 {
     position: absolute;
     margin: 0;
