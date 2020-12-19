@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS - Sé parte de nuestra red de prestadores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/form2.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<style>
+    input:focus {
+        background-color: rgba(0, 0, 0, 0.3) !important; 
+        color: white !important;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    #topbar button {
+        height: 50px;
+        background-color: transparent;
+        border: 2px solid #BB0222;
+        border-radius: 5px;
+        padding: 0px 25px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-transparent">
+        <div id="topbar" class="ml-4 mt-4">
+            <a href="#" class="navbar-brand"><img class="navbar-logo" src="./assets/logo.png" alt="" srcset=""></a>
+            <button value="Back" onclick="window.history.back()" class="volver">Volver</button>
+        </div>
+        
+    </nav>
+
+    <!-- Tabla -->
+    <div class="text-center clientes-header">
+        <h2><strong>Clientes</strong></h2>
+        <p>Nuestros clientes son nuestros mejores referentes y conforman una extensa nómina que representa nuestro mayor orgullo</p>
+        <p>¡Haga clic en cualquiera de los números para llamar al instante!</p>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row tabla-numeros">
+                <div class="col-sm-12 col-md-3">
+                    <div class="numero-cliente column-first-element">
+                        <h5>AMCA / ORBIS</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003339111">0800 333 9111</a></p>
+                        <p class="numero-p"><a class="numero-a" href="tel:08006660948">0800 666 0948</a></p>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003337755">0800 333 7755</a></p>
+                        <p class="numero-p"><a class="numero-a" href="tel:08009990534">0800 999 0534</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Argos</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08009992746">0800 999 2746</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Audi</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08009992834">0800 999 2834</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Berkey</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08005550465">0800 555 0465</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>BMW</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002226927">0800 222 6927</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Caruso</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08007777348">0800 777 7348</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Chrysler</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003333131">0800 333 3131</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Citroën</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002224876">0800 222 4876</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>CNH Iveco</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004448326">0800 444 8326</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Corporativa de Seguros de Luz y Fuerza</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003332753">0800 333 2753</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Dodge</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004448000">0800 444 8000</a></p>
+                    </div>
+
+                    
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="numero-cliente column-first-element">
+                        <h5>Ducati</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08007773822">0800 777 3822</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>El Norte</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008884652">0800 888 4652</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Federación Patronal</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002220022">0800 222 0022</a></p>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004440001">0800 444 0001</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>FIAT</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004448000">0800 444 8000</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Galeno</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08007775433">0800 777 5433</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Instituto Provincial de Entre Ríos</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003336524">0800 333 6524</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Intégrity</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002223700">0800 222 3700</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Iúnigo</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:0114835811">011 4835 811</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Jaguar Assistance</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008005248">0800 800 5248</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Jeep</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004448000">0800 444 8000</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>La Equitativa del Plata</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08005555337">0800 555 5337</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>La Holando</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:">0800 999 9999</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="numero-cliente column-first-element">
+                        <h5>La Perseverancia</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002222577">0800 222 2577</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Land Rover</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008885263">0800 888 5263</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Mercantil Andina</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08007772634">0800 777 2634</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Mercedes-Benz</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08006662369">0800 666 2369</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Metropolitana</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08005550088">0800 555 0088</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Meridional</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008004358">0800 800 4358</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Mini</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003336464">0800 333 6464</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Nación Seguros</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003333300">0800 333 3300</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>PSA Peugeot</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002224000">0800 222 4000</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>RAM</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004448000">0800 444 8000</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Rio Uruguay</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08004441441">0800 444 1441</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Rivadavia</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08006666789">0800 666 6789</a></p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="numero-cliente column-first-element">
+                        <h5>Santander</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08009992400">0800 999 2400</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Samcro Utilidad</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08009995122">0800 999 5122</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>SeguroMetal</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008888308">0800 888 8308</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Smart</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:080044476278">0800 444 76278</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Sura Seguros</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:080099976925">0800 999 76925</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>TPC</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003336524">0800 333 6524</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Victoria Seguros</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08003330990">0800 333 0990</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Volvo</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:080055586586">0800 555 86586</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>VW</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08006663434">0800 666 3434</a></p>
+                        <p class="numero-p"><a class="numero-a" href="tel:08008888338">0800 888 8338</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>VW Camiones y Buses</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08006668922">0800 666 8922</a></p>
+                    </div>
+                    <div class="numero-cliente">
+                        <h5>Zurich</h5>
+                        <p class="numero-p"><a class="numero-a" href="tel:08002221600">08002221600</a></p>
+                    </div>
+                    
+                </div>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="page-footer">
+  
+    <div class="links">
+      <button type="button" class="btn btn-link">Datos útiles</button>
+      <button type="button" class="btn btn-link" onclick="window.location.href='https://consultadeservicios.redsos.com.ar/'">Portal postventa</button>
+
+     <br>
+    </div>
+    <div class="rights">
+      <p>
+       <span><b>S.O.S Red de Asistencia</span> <span>Todos los derechos reservados</span></b></p>
+      <p>Desarrollado por <a href="" style="color: white; text-decoration: none;"> Damsquad</a></p>
+    </div>
+  
+  </footer>
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

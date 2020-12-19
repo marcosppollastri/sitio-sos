@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', 'Sans';
+}
+
+.jumbotron{
+    background: none;
+}
+
+.center{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#input-cv{
+    display: none;
+}
+
+.page-footer {
+    background-color: #BB0222;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    float:bottom;
+    /* font-size: 25px; */
+    color: white;
+    width: 100%;
+    position: absolute;
+    padding-right: 5vw;
+        padding-left: 5vw;
+        font-size: 1rem;
+}
+
+.rights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    }
+    
+    .links a {
+        
+        color: white;
+        text-decoration: none;
+    }
+    
+    .links button:hover {
+        color: #13ADC6;
+        text-decoration: none; 
+    }
+    
+    .links a:hover {
+        color: #13ADC6;
+        text-decoration: none;
+    }
+    
+    .links button {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        /* font-size: 24px; */
+    }
+    @media screen and (max-width: 605px){
+        .navbar-logo{
+            max-height: 2em;
+        }
+    }
+.hidden{
+    display: none;
+}
+.tabla-numeros{
+    padding: 5vw;
+}
+
+.clientes-header {
+    background-color: #BB0222;
+    padding: 2vw;
+    color: white;
+}
+
+.numero-cliente {
+    text-align: center;
+    padding-top: 1vw;
+    padding-inline: 1vw;
+    height: 12vh;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    /* border: 1px solid grey; */
+}
+.numero-p{
+    margin-bottom: 0.1vh;
+    margin-top: 00.1vh;
+
+}
+
+.numero-a{
+    color: #BB0222;
+    text-decoration: none;
+}
+.column-first-element{
+    height: 19vh;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 605px){
+    .column-first-element{
+        height: inherit;
+        margin-bottom: 10vw;
+    }
+    .numero-cliente{
+        margin-bottom: 20px;
+    }
+}
+/* .g-recaptcha{
+    display: inline-block;
+} */
