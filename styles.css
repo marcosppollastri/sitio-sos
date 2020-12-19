@@ -808,6 +808,7 @@ h1 {
     background-color: #EAEAEA;
 }
 
+
 .services-title h1 {
     width: 100%;
     display: -webkit-box;
@@ -2655,6 +2656,21 @@ box-shadow: 0.8vw 0.8vw 0.8vw 0px rgba(0,0,0,0.3);
     }
 }
 
+@media (max-width: 400px) {
+    #modalSOS .modal-content {
+        width: 90vw;
+    }
+
+    #myModal .modal-menu button {
+        font-size: 10px;
+    }
+    #myModal {
+        margin: 5%;
+        font-size: 10px;
+    }
+
+}
+
 .slick-track
 {
     position: relative;
@@ -2811,6 +2827,7 @@ background-color: rgba(222, 222, 222);
   }
   
 @media only screen and (max-width: 900px){
+
     .contact-header h1 {
         font-size: 5vw;
         text-align: center;
@@ -2848,8 +2865,8 @@ background-color: rgba(222, 222, 222);
 
 @media only screen and (max-width: 996px){
     #services-grid-mobile{
-        display: -ms-grid;
-        display: grid;
+        display: flex;
+        flex-direction: column;
     }
     #services-grid-desktop{
         display: none;
@@ -3058,4 +3075,138 @@ header li{
 
 html,body{
     overflow-x: hidden;
+}
+
+
+
+@media (max-width: 380px) {
+
+
+.modal-menu > button:nth-child(1) {
+    font-size: 10px;
+  }
+  
+  
+  .modal-menu > button:nth-child(2) {
+    font-size: 10px;
+  }
+  
+
+  .modal-menu > button:nth-child(3) {
+    font-size: 10px;
+  }
+    
+  .modal-menu button {
+    padding: 5px;
+  }
+  
+    .modal-text ul {
+      text-align: left;
+        line-height: 15px !important;
+        font-size: 9px;
+    }
+    .modal-text {
+      padding-top: 0px !important;
+      line-height: 12px !important;
+    }
+    #datosUtilesVehiculos {
+       font-size: 10px;
+    }
+  
+  
+  #myModal {
+    margin-left: 3;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .modal-content .close {
+    margin: 10px 10px 0px 0px;
+  }
+  
+  .modal-menu {
+    padding-top: 0px;
+  }
+  
+    .modal-text {
+      font-size: 10px;
+    }
+  
+  
+  .modal-text {
+    padding-left: 1vw;
+  }
+  
+  .modal-text {
+     padding-bottom: 5px;
+  }
+  
+  
+  #datosUtilesVehiculos > h1:nth-child(1) {
+    font-size: 12px;
+  }
+  
+  
+  #datosUtilesVehiculos > h3:nth-child(2) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > li:nth-child(1) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > ul:nth-child(2) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > li:nth-child(4) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > li:nth-child(6) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > li:nth-child(8) {
+    font-size: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos > ol:nth-child(4) > ul:nth-child(9) {
+    font-size: 10px;
+  }
+  
+  
+  .modal-dialog-scrollable > div:nth-child(1) {
+    width: 90vw;
+  }
+  
+  
+  .modal-dialog {
+    margin: 10px;
+  }
+  
+  
+  #datosUtilesVehiculos {
+    font-size: 10px;
+  }
+
+  #datosUtilesHogar {
+      line-height: 15px;
+  }
+
+  #datosUtilesHogar h1, #datosUtilesHogar h3, #datosUtilesHogar ol li {
+      font-size: 10px;
+  }
+  
+  #datosUtilesNautica h1, #datosUtilesHogar h3, #datosUtilesHogar ol li {
+    font-size: 10px;
+}
+
+
 }
