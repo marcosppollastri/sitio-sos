@@ -90,7 +90,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
 
-   <!--      <div class="item active">
+       <div class="item active">
           <img src="src/assets/Banner 1.png" alt="Los Angeles" style="width:100%;">
           <div class="text-in-carousel" style="left: 50%; top: 45%; width: 100%;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -105,9 +105,9 @@
                   class="center-text">Ingresar</strong></button></a>
             </div>
           </div>
-        </div>-->
+        </div>
 
-        <div class="item active">
+   <!--       <div class="item">
           <img src="src/assets/banner-2-2.png" alt="Chicago" style="width:100%;">
           <div class="text-in-carousel-2">
             <div class="banner-content-2">
@@ -117,7 +117,7 @@
                   class="center-text">Conocelas</strong></button>
             </div>
           </div>
-        </div>
+        </div>-->
 
         <div class="item">
           <img src="src/assets/banner-3.png" alt="New York" style="width:100%;">
@@ -192,7 +192,7 @@
         <img src="src/content/red.png" alt="" class="sweep-this">
         <div class="contact-column-text">
           <img src="src/content/whatsapp.png" alt="whatsapp logo" class="small-img" id="hide">
-          <h3 class="contact-title" style="@media screen and (max-width: 480px) {color: white !important; text-decoration: none !important; font-size: 5vw !important;}">0800 333 6524</h3>
+          <h3 class="contact-title" id="number">0800 333 6524</h3>
           <p class="contact-p">Llamanos y ponete en contacto para que <br> podamos resolver tus problemas</p>
           <button onclick="window.location.href='tel:08003336524'" class="hidden-button">Llamar</button>
         </div>
@@ -322,7 +322,212 @@
       </div>
 
     </div>
-    <div id="services-grid-mobile">
+
+
+<style>
+@media (max-width: 768px) {
+  #services-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+.services-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.services-row img {
+  width: 50%;
+}
+
+.services-box {
+  width: 50%;
+}
+}
+
+@media (min-width: 768px) {
+  #services-mobile {
+    display: none;
+  }
+}
+
+
+</style>
+
+
+
+    <div id="services-mobile">
+
+      <div class="services-row">
+        <img class="zoom-in" src="src/assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
+        <div class="services-box" id="vehicular-text">
+          <h1>Asistencia Vehicular</h1>
+          <h2>Circulá tranquilo con la tranquilidad de contar con la mejor asistencia las 24 hs. Servicios de urgencias
+            mecánicas y traslados en todo el país para cualquier tipo de vehículo: automóviles, motos, camiones, para
+            resolver cualquier desperfecto, siniestro o urgencia que pueda ocurrir.</h2>
+        </div>
+      </div>
+
+
+      <div class="services-row">
+        <div class="services-box" id="non-stop-text">
+          <h1>Asistencia Non Stop</h1>
+          <h2>Circulá tranquilo. Te asistimos en la vía pública con tu bicicleta, monopatín o cualquier dispositivo de
+            movilidad urbana. Te brindamos servicios para tu vehículo y para que puedas llegar a tu destino ante
+            averías, accidentes o robos. </h2>
+        </div>
+        <img src="src/assets/services/Asistencia non-stop.jpg" id="non-stop" alt="">
+      </div>
+
+      <div class="services-row">
+        <img src="src/assets/services/Asistencia hogar.jpg" id="hogar" alt="">
+        <div class="services-box" id="hogar-text">
+          <h1>Asistencia al Hogar</h1>
+          <h2>¿Tuviste una urgencia en tu casa? ¿Necesitás una reparación? En SOS ponemos a tu disposición una amplia
+            red de profesionales que llegarán a tu domicilio para solucionar cualquier problema de plomería,
+            electricidad, gas, cerrajería y mucho más. Nuestra red de prestadores te asistirá dentro de tu hogar para
+            que puedas seguir disfrutándolo como siempre.
+          </h2>
+        </div>
+      </div>
+
+      <div class="services-row">
+        <div class="services-box" id="nautica-text">
+          <h1>Asistencia Náutica</h1>
+          <h2>Ante cualquier inconveniente en la navegación, te brindamos el mejor servicio para la embarcación, desde
+            asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras, así como también el rescate de
+            todos los navegantes. Te cuidamos y acompañamos para que solo te preocupes por elegir el destino.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia Nautica.jpg" id="nautica" alt="">
+      </div>
+
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/Asistencia de salud 2.jpg" alt="">
+        <div class="services-box">
+          <h1>Asistencia de Salud</h1>
+          <h2>La mejor cobertura de servicios de salud, para asistirte ante cualquier inconveniente médico. Servicio de
+            ambulancia hasta el hospital más cercano, médicos especialistas, exámenes complementarios y mucho más para
+            que estés protegido ante cualquier hecho fortuito. averías, accidentes o robos.
+          </h2>
+        </div>
+
+
+      </div>
+
+      <div class="services-row">
+
+
+        <div class="services-box">
+          <h1>Asistencia en Tecnología</h1>
+          <h2>Estamos presentes ante cualquier problema que cualquiera de tus dispositivos pueda presentarte. Enviando
+            la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma
+            remota para arreglar o configurar sus dispositivos.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia de tecnologia.jpg" alt="">
+
+      </div>
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/Asistencia Viaje.jpg" alt="">
+        <div class="services-box">
+          <h1>Asistencia en Viaje</h1>
+          <h2>Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante
+            cualquier inconveniente que surja. Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al
+            domicilio: soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que sigas viajando
+            tranquilo en caso de tener un inconveniente con tu vehículo.
+          </h2>
+        </div>
+
+      </div>
+
+
+      
+      <div class="services-row">
+
+
+        <div class="services-box">
+          <h1>Asistencia a Mascotas</h1>
+          <h2>¿Tu mascota también necesita cuidado? Con nosotros, tu mascota cuenta con un amplio abanico de servicios
+            que incluye hasta consultas médicas veterinarias. También cuenta con asistencia de vacunación y envío de
+            medicamentos a domicilio después de un accidente o cirugía. Siempre limpio: cuida de tu mascota con el
+            servicio de baño, peluquería y pipeta antipulgas.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia a mascotas.jpg" alt="">
+
+      </div>
+
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/CONCIERGE SERVICE.jpg" alt="">
+
+        <div class="services-box">
+          <h1>Servicio de Concierge</h1>
+          <h2>Porque lo que más nos interesa es asistirte, te ayudamos a hacer tus reservaciones para restaurantes,
+            comprar entradas para eventos, preparar las vacaciones soñadas, concertar lo necesario para tus actividades
+            empresariales en el mundo entero, localizar artículos difíciles de encontrar, así como comprar y entregar
+            regalos.
+          </h2>
+        </div>
+        
+      </div>
+
+
+      <div class="services-row">
+
+        <div class="services-box">
+          <h1>Servicio Energy</h1>
+          <h2> Brindamos una solución integral a nuestros clientes al momento de necesitar un cambio de batería.
+            Integramos el servicio de asistencia a través de nuestros mecánicos especializados con un producto con la
+            más alta calidad, lo que nos permite ofrecer una garantía de 18 meses.
+          </h2>
+        </div>
+        <img src="src/assets/services/energy2.jpg" alt="">
+        
+      </div>
+
+      <div class="services-row">
+
+        <img src="src/assets/services/Telemedicina.jpg" alt="">
+        <div class="services-box">
+          <h1>Telemedicina</h1>
+          <h2>¿Necesitas hacer una consulta médica? Contamos con una app exclusiva para realizar tu consulta médica a
+            través de videollamada, sin traslados ni esperas. Es una opción rápida y confiable para que realices tu
+            consulta de salud u obtengas una segunda opinión médica, cuando lo necesites.
+          </h2>
+        </div>
+        
+      </div>
+
+
+      <div class="services-row">
+
+        <div class="services-box">
+          <h1>Tercera edad</h1>
+          <h2> Sabemos lo importante que es asistir en todo momento y cuando más lo necesitas. Por eso acercamos un
+            producto para nuestros adultos mayores que los acompañará a resolver situaciones donde requieran asistencia.
+          </h2>
+        </div>
+        <img src="src/assets/services/tercera edad.jpg" alt="">
+        
+      </div>
+
+
+    </div>
+
+
+
+  <!--  <div id="services-grid-mobile">
       <div class="row" id="services-row-1">
         <img class="zoom-in" src="src/assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
         <div class="services-box" id="vehicular-text">
@@ -442,7 +647,7 @@
         </div> <img src="src/assets/services/tercera edad.jpg" alt="">
       </div>
 
-    </div>
+    </div>-->
 
 
   </section>
@@ -834,9 +1039,6 @@
                                 <li class="splide__slide">
                                     <img src="src/content/Logos de clientes/Prosegur.PNG">
                                   </li>
-                                  <li class="splide__slide">
-                                      <img src="src/content/Logos de clientes/Provincia.PNG">
-                                    </li>
                                     <li class="splide__slide">
                                         <img src="src/content/Logos de clientes/Ram.PNG">
                                       </li>
@@ -885,60 +1087,6 @@
 </ul>
     </div>
   </div>
-  <!--
-  <img src="src/content/Logos de clientes/Amca.PNG">
-  <img src="src/content/Logos de clientes/Argos.PNG">
-  <img src="src/content/Logos de clientes/Audi.PNG">
-  <img src="src/content/Logos de clientes/Berkley.PNG">
-  <img src="src/content/Logos de clientes/BMW.PNG">
-  <img src="src/content/Logos de clientes/Caruso.PNG">
-  <img src="src/content/Logos de clientes/Chrysler.PNG">
-  <img src="src/content/Logos de clientes/Citroen.PNG">
-  <img src="src/content/Logos de clientes/Dodge.PNG">
-  <img src="src/content/Logos de clientes/DS.PNG">
-  <img src="src/content/Logos de clientes/Ducati.PNG">
-  <img src="src/content/Logos de clientes/El norte.PNG">
-  <img src="src/content/Logos de clientes/Federacion.PNG">
-  <img src="src/content/Logos de clientes/Fiat.PNG">
-  <img src="src/content/Logos de clientes/Galeno.PNG">
-  <img src="src/content/Logos de clientes/GCBA.PNG">
-  <img src="src/content/Logos de clientes/Integrity.PNG">
-  <img src="src/content/Logos de clientes/IPER.PNG">
-  <img src="src/content/Logos de clientes/Iunigo.PNG">
-  <img src="src/content/Logos de clientes/Iveco.PNG">
-  <img src="src/content/Logos de clientes/Jaguar.PNG">
-  <img src="src/content/Logos de clientes/Jeep.PNG">
-  <img src="src/content/Logos de clientes/La equitativa.PNG">
-  <img src="src/content/Logos de clientes/La Holando.PNG">
-  <img src="src/content/Logos de clientes/La Perseverancia.PNG">
-  <img src="src/content/Logos de clientes/Land Rover.PNG">
-  <img src="src/content/Logos de clientes/Lexus.PNG">
-  <img src="src/content/Logos de clientes/Luz y Fuerza.PNG">
-  <img src="src/content/Logos de clientes/Mercantil Andina.PNG">
-  <img src="src/content/Logos de clientes/Mercedes.PNG">
-  <img src="src/content/Logos de clientes/Meridional.PNG">
-  <img src="src/content/Logos de clientes/Metropolitana.png">
-  <img src="src/content/Logos de clientes/Mini.PNG">
-  <img src="src/content/Logos de clientes/Nacion.PNG">
-  <img src="src/content/Logos de clientes/Nativa.jpg">
-  <img src="src/content/Logos de clientes/Orbis.PNG">
-  <img src="src/content/Logos de clientes/Peugeot.PNG">
-  <img src="src/content/Logos de clientes/Prosegur.PNG">
-  <img src="src/content/Logos de clientes/Provincia.PNG">
-  <img src="src/content/Logos de clientes/Ram.PNG">
-  <img src="src/content/Logos de clientes/Rio Uruguay.PNG">
-  <img src="src/content/Logos de clientes/Rivadavia.PNG">
-  <img src="src/content/Logos de clientes/San Cristobal.PNG">
-  <img src="src/content/Logos de clientes/santander.png">
-  <img src="src/content/Logos de clientes/Segurometal.PNG">
-  <img src="src/content/Logos de clientes/Smart.PNG">
-  <img src="src/content/Logos de clientes/Sura.PNG">
-  <img src="src/content/Logos de clientes/Toyota.PNG">
-  <img src="src/content/Logos de clientes/TPC.PNG">
-  <img src="src/content/Logos de clientes/Victoria.PNG">
-  <img src="src/content/Logos de clientes/Volkswagen.PNG">
-  <img src="src/content/Logos de clientes/Volvo.png">
-  <img src="src/content/Logos de clientes/Zurich.PNG">-->
 
 </div>
 

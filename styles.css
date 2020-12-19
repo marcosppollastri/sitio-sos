@@ -884,6 +884,14 @@ h1 {
 }
 
 
+@media (max-width: 768px) {
+    #number {
+        color: white !important;
+        font-size: 5vw !important;
+        text-decoration: none !important;
+    }
+}
+
 
 @media screen and (max-width: 1442px) {
 .services-box {
@@ -904,7 +912,7 @@ grid-template-columns: 1fr 1fr;
 height: 100vw;
 }
 .services img {
-height: 100%;
+height: auto;
 }
 
 .services-box {
