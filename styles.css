@@ -2310,8 +2310,7 @@ display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: c
       margin-top: 2vw;
     }
     .contact {
-        padding-inline: 5vw;
-       
+        padding: 5vw;
            background-color: #BB0222;
            position: relative;
        }
