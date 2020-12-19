@@ -22,6 +22,9 @@
   <link rel="stylesheet" type="text/css" href="src/slick-1.8.1/slick/slick.scss">
   <script src="https://kit.fontawesome.com/184184e7df.js" crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
   <title>SOS Red</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="src/css/materialize-onlynavbar.css">
@@ -87,7 +90,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
 
-        <div class="item active">
+   <!--      <div class="item active">
           <img src="src/assets/Banner 1.png" alt="Los Angeles" style="width:100%;">
           <div class="text-in-carousel" style="left: 50%; top: 45%; width: 100%;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -102,21 +105,21 @@
                   class="center-text">Ingresar</strong></button></a>
             </div>
           </div>
-        </div>
+        </div>-->
 
-        <div class="item">
+        <div class="item active">
           <img src="src/assets/banner-2-2.png" alt="Chicago" style="width:100%;">
           <div class="text-in-carousel-2">
             <div class="banner-content-2">
               <h1 class="banner-title">ASISTIMOS EN LOS <br>MOMENTOS CLAVES</h1>
               <h2 class="banner-subtitle">¡Conocé todas nuestras asistencias!</h2>
               <button onclick="window.location.href='#servicios'" class="banner-button" id="btn-servicios"><strong
-                  class="center-text">Ingresar</strong></button>
+                  class="center-text">Conocelas</strong></button>
             </div>
           </div>
         </div>
 
-    <!--    <div class="item">
+        <div class="item">
           <img src="src/assets/banner-3.png" alt="New York" style="width:100%;">
           <div class="text-in-carousel-3">
             <div class="banner-content-3">
@@ -127,7 +130,7 @@
             </div>
           </div>
         </div>
--->
+
         <div class="item">
           <img src="src/assets/banner-web-osa.png" alt="New York" style="width:100%;">
         </div>
@@ -189,7 +192,7 @@
         <img src="src/content/red.png" alt="" class="sweep-this">
         <div class="contact-column-text">
           <img src="src/content/whatsapp.png" alt="whatsapp logo" class="small-img" id="hide">
-          <h3 class="contact-title">0800 333 6524</h3>
+          <h3 class="contact-title" style="color: white !important; text-decoration: none !important; font-size: 5vw !important;">0800 333 6524</h3>
           <p class="contact-p">Llamanos y ponete en contacto para que <br> podamos resolver tus problemas</p>
           <button onclick="window.location.href='tel:08003336524'" class="hidden-button">Llamar</button>
         </div>
@@ -689,46 +692,252 @@
 </span>
 
 
-
 <div class="customer-logos">
-  <div class="slide"><img src="src/content/Logos de clientes/Amca.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Argos.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Audi.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Berkley.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/BMW.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Ducati.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/El norte.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Federacion.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Fiat.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Galeno.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/GCBA.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Integrity.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/IPER.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Iunigo.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Iveco.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Lexus.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Luz y Fuerza.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Land Rover.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mercantil Andina.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mercedes.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Meridional.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Metropolitana.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mini.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Nacion.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Nativa.jpg"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Orbis.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Peugeot.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Prosegur.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Ram.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Rio Uruguay.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/santander.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Sura.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Toyota.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/TPC.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Victoria.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Volkswagen.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Volvo.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Zurich.PNG"></div>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <li class="splide__slide">
+          <img src="src/content/Logos de clientes/Amca.PNG">
+        </li>
+
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/Argos.PNG">
+  </li>
+
+    <li class="splide__slide">
+  <img src="src/content/Logos de clientes/Audi.PNG">
+  </li>
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/Berkley.PNG">
+    </li>
+
+  <li class="splide__slide">
+<img src="src/content/Logos de clientes/BMW.PNG">
+    </li>
+      <li class="splide__slide">
+        <img src="src/content/Logos de clientes/Caruso.PNG">
+    </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Chrysler.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Citroen.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Dodge.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/DS.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Ducati.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/El norte.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Federacion.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Fiat.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Galeno.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/GCBA.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Integrity.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/IPER.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Iunigo.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Iveco.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Jaguar.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Jeep.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/La equitativa.PNG">
+    </li>
+
+    
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/La Perseverancia.PNG">    </li>
+
+      <li class="splide__slide">
+        <img src="src/content/Logos de clientes/Land Rover.PNG">
+      </li>
+      <li class="splide__slide">
+          <img src="src/content/Logos de clientes/Lexus.PNG">
+        </li>
+        <li class="splide__slide">
+            <img src="src/content/Logos de clientes/La Holando.PNG">
+          </li>
+          <li class="splide__slide">
+              <img src="src/content/Logos de clientes/Luz y Fuerza.PNG">
+            </li>
+            <li class="splide__slide">
+                <img src="src/content/Logos de clientes/Mercantil Andina.PNG">
+              </li>
+              <li class="splide__slide">
+                  <img src="src/content/Logos de clientes/Mercedes.PNG">
+                </li>
+                <li class="splide__slide">
+                    <img src="src/content/Logos de clientes/Meridional.PNG">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="src/content/Logos de clientes/Metropolitana.png">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="src/content/Logos de clientes/Mini.PNG">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="src/content/Logos de clientes/Nacion.PNG">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="src/content/Logos de clientes/Nativa.jpg">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="src/content/Logos de clientes/Orbis.PNG">
+                              </li>
+                                <li class="splide__slide">
+                                  <img src="src/content/Logos de clientes/Peugeot.PNG">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="src/content/Logos de clientes/Prosegur.PNG">
+                                  </li>
+                                  <li class="splide__slide">
+                                      <img src="src/content/Logos de clientes/Provincia.PNG">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="src/content/Logos de clientes/Ram.PNG">
+                                      </li>
+                                      <li class="splide__slide">
+                                          <img src="src/content/Logos de clientes/Rio Uruguay.PNG">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="src/content/Logos de clientes/Rivadavia.PNG">
+                                          </li>
+                                          <li class="splide__slide">
+                                                  <img src="src/content/Logos de clientes/San Cristobal.PNG">
+                                                </li>
+
+                                                  <li class="splide__slide">
+                                                          <img src="src/content/Logos de clientes/santander.png">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="src/content/Logos de clientes/Segurometal.PNG">
+                                                          </li>
+                                                          <li class="splide__slide">
+                                                              <img src="src/content/Logos de clientes/Smart.PNG">
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <img src="src/content/Logos de clientes/Sura.PNG">
+                                                              </li>
+                                                              <li class="splide__slide">
+                                                                  <img src="src/content/Logos de clientes/Toyota.PNG">
+                                                                </li>
+                                                                <li class="splide__slide">
+                                                                    <img src="src/content/Logos de clientes/TPC.PNG">
+                                                                  </li>
+                                                                  <li class="splide__slide">
+                                                                      <img src="src/content/Logos de clientes/Victoria.PNG">
+                                                                    </li>
+                                                                    <li class="splide__slide">
+                                                                        <img src="src/content/Logos de clientes/Volkswagen.PNG">
+                                                                      </li>
+                                                                      <li class="splide__slide">
+                                                                          <img src="src/content/Logos de clientes/Volvo.png">
+                                                                        </li>
+                                                                        <li class="splide__slide">
+                                                                            <img src="src/content/Logos de clientes/Zurich.PNG">
+                                                                          </li>
+
+  </div>
+</ul>
+    </div>
+  </div>
+  <!--
+  <img src="src/content/Logos de clientes/Amca.PNG">
+  <img src="src/content/Logos de clientes/Argos.PNG">
+  <img src="src/content/Logos de clientes/Audi.PNG">
+  <img src="src/content/Logos de clientes/Berkley.PNG">
+  <img src="src/content/Logos de clientes/BMW.PNG">
+  <img src="src/content/Logos de clientes/Caruso.PNG">
+  <img src="src/content/Logos de clientes/Chrysler.PNG">
+  <img src="src/content/Logos de clientes/Citroen.PNG">
+  <img src="src/content/Logos de clientes/Dodge.PNG">
+  <img src="src/content/Logos de clientes/DS.PNG">
+  <img src="src/content/Logos de clientes/Ducati.PNG">
+  <img src="src/content/Logos de clientes/El norte.PNG">
+  <img src="src/content/Logos de clientes/Federacion.PNG">
+  <img src="src/content/Logos de clientes/Fiat.PNG">
+  <img src="src/content/Logos de clientes/Galeno.PNG">
+  <img src="src/content/Logos de clientes/GCBA.PNG">
+  <img src="src/content/Logos de clientes/Integrity.PNG">
+  <img src="src/content/Logos de clientes/IPER.PNG">
+  <img src="src/content/Logos de clientes/Iunigo.PNG">
+  <img src="src/content/Logos de clientes/Iveco.PNG">
+  <img src="src/content/Logos de clientes/Jaguar.PNG">
+  <img src="src/content/Logos de clientes/Jeep.PNG">
+  <img src="src/content/Logos de clientes/La equitativa.PNG">
+  <img src="src/content/Logos de clientes/La Holando.PNG">
+  <img src="src/content/Logos de clientes/La Perseverancia.PNG">
+  <img src="src/content/Logos de clientes/Land Rover.PNG">
+  <img src="src/content/Logos de clientes/Lexus.PNG">
+  <img src="src/content/Logos de clientes/Luz y Fuerza.PNG">
+  <img src="src/content/Logos de clientes/Mercantil Andina.PNG">
+  <img src="src/content/Logos de clientes/Mercedes.PNG">
+  <img src="src/content/Logos de clientes/Meridional.PNG">
+  <img src="src/content/Logos de clientes/Metropolitana.png">
+  <img src="src/content/Logos de clientes/Mini.PNG">
+  <img src="src/content/Logos de clientes/Nacion.PNG">
+  <img src="src/content/Logos de clientes/Nativa.jpg">
+  <img src="src/content/Logos de clientes/Orbis.PNG">
+  <img src="src/content/Logos de clientes/Peugeot.PNG">
+  <img src="src/content/Logos de clientes/Prosegur.PNG">
+  <img src="src/content/Logos de clientes/Provincia.PNG">
+  <img src="src/content/Logos de clientes/Ram.PNG">
+  <img src="src/content/Logos de clientes/Rio Uruguay.PNG">
+  <img src="src/content/Logos de clientes/Rivadavia.PNG">
+  <img src="src/content/Logos de clientes/San Cristobal.PNG">
+  <img src="src/content/Logos de clientes/santander.png">
+  <img src="src/content/Logos de clientes/Segurometal.PNG">
+  <img src="src/content/Logos de clientes/Smart.PNG">
+  <img src="src/content/Logos de clientes/Sura.PNG">
+  <img src="src/content/Logos de clientes/Toyota.PNG">
+  <img src="src/content/Logos de clientes/TPC.PNG">
+  <img src="src/content/Logos de clientes/Victoria.PNG">
+  <img src="src/content/Logos de clientes/Volkswagen.PNG">
+  <img src="src/content/Logos de clientes/Volvo.png">
+  <img src="src/content/Logos de clientes/Zurich.PNG">-->
 
 </div>
 
