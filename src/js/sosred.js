@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 5,
         slidesToScroll: 5,
@@ -19,7 +19,15 @@ $(document).ready(function(){
             }
         }]
     });
-});
+});*/
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.splide', {
+      perPage: 5,
+      rewind : true,
+      autoplay: true
+    } ).mount();
+  } );
 
 
 function initialize() {
