@@ -1213,6 +1213,10 @@ background-position: center;
 @media screen and (max-width: 768px) {
     .parallax {
     height: 900px;
+    max-height: 900px;
+    background-size: auto;
+    background-position: center;
+    background-clip: border-box;
 }
 }
 
