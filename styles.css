@@ -1194,38 +1194,7 @@ height: 50vw;
 
 }
 
-@media (max-width: 768px) {
-    #services-mobile {
-      display: flex;
-      flex-direction: column;
-    }
 
-    .services-row {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      max-height: 50vw;
-      height: 50vw;
-    }
-
-    .services-row img {
-      width: 50%;
-      height: 50vw;
-      max-height: 50vw;
-    }
-
-    .services-box {
-      width: 50%;
-      height: 50vw;
-      max-height: 50vw;
-    }
-  }
-
-  @media (min-width: 768px) {
-    #services-mobile {
-      display: none;
-    }
-  }
 
 /*parallax section*/
 
@@ -1239,7 +1208,6 @@ height: 50vw;
 background-size: cover; /* Encajamos la imagen al 100% del ancho */
 background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
 background-position: center;
-position: sticky;
 }
 
 @media screen and (max-width: 768px) {
@@ -2348,8 +2316,7 @@ display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: c
     .map-button {
       text-align: center;
       font-size: 2.4vw;
-      height: 17vw;
-      padding-bottom: 10px;
+      height: 14vw;
     }
     #map-content {
       width: 50vw;
