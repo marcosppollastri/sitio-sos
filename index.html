@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <link rel="stylesheet" href="./bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -21,6 +21,9 @@
   <link rel="stylesheet" type="text/css" href="src/slick-1.8.1/slick/slick-theme.scss">
   <link rel="stylesheet" type="text/css" href="src/slick-1.8.1/slick/slick.scss">
   <script src="https://kit.fontawesome.com/184184e7df.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
   <title>SOS Red</title>
   <!-- Compiled and minified CSS -->
@@ -87,7 +90,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
 
-        <div class="item active">
+       <div class="item active">
           <img src="src/assets/Banner 1.png" alt="Los Angeles" style="width:100%;">
           <div class="text-in-carousel" style="left: 50%; top: 45%; width: 100%;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -97,26 +100,26 @@
                 nuestra WebApp!</h2>
               <button
                 class="banner-button banner-button-1" id=" ingrese">
-                <a href="https://tuasistencia.redsos.com.ar/home/login" target="_blank">
+                <a href="https://tuasistencia.redsos.com.ar" target="_blank">
                 <strong
                   class="center-text">Ingresar</strong></button></a>
             </div>
           </div>
         </div>
 
-        <div class="item">
+         <div class="item">
           <img src="src/assets/banner-2-2.png" alt="Chicago" style="width:100%;">
           <div class="text-in-carousel-2">
             <div class="banner-content-2">
               <h1 class="banner-title">ASISTIMOS EN LOS <br>MOMENTOS CLAVES</h1>
               <h2 class="banner-subtitle">¡Conocé todas nuestras asistencias!</h2>
               <button onclick="window.location.href='#servicios'" class="banner-button" id="btn-servicios"><strong
-                  class="center-text">Ingresar</strong></button>
+                  class="center-text">Conocelas</strong></button>
             </div>
           </div>
         </div>
 
-    <!--    <div class="item">
+   <!--      <div class="item">
           <img src="src/assets/banner-3.png" alt="New York" style="width:100%;">
           <div class="text-in-carousel-3">
             <div class="banner-content-3">
@@ -126,8 +129,8 @@
                 class="banner-button" id="ingrese"><strong class="center-text">Ingresar</strong></button>
             </div>
           </div>
-        </div>
--->
+        </div>-->
+
         <div class="item">
           <img src="src/assets/banner-web-osa.png" alt="New York" style="width:100%;">
         </div>
@@ -156,7 +159,7 @@
           <img src="src/content/whatsapp.png" alt="whatsapp logo" class="small-img" id="hide">
           <h3 class="contact-title">WebApp</h3>
           <p class="contact-p">Ingresá a la WebApp y solicitá tu servicio</p>
-          <button class="hidden-button"><a href="https://tuasistencia.redsos.com.ar/home/login" target="_blank" rel="noopener noreferrer">Ingresar</a></button>
+          <button class="hidden-button"><a href="https://tuasistencia.redsos.com.ar" target="_blank" rel="noopener noreferrer">Ingresar</a></button>
         </div>
       </div>
 
@@ -189,7 +192,7 @@
         <img src="src/content/red.png" alt="" class="sweep-this">
         <div class="contact-column-text">
           <img src="src/content/whatsapp.png" alt="whatsapp logo" class="small-img" id="hide">
-          <h3 class="contact-title">0800 333 6524</h3>
+          <h3 class="contact-title" id="number" style="text-decoration: none; color: white;">0800 333 6524</h3>
           <p class="contact-p">Llamanos y ponete en contacto para que <br> podamos resolver tus problemas</p>
           <button onclick="window.location.href='tel:08003336524'" class="hidden-button">Llamar</button>
         </div>
@@ -202,6 +205,7 @@
 
 
   <section class="services" id="servicios">
+
     <div class="services-title">
       <h1>Nuestras Asistencias</h1>
     </div>
@@ -256,7 +260,7 @@
         </div> <img src="src/assets/services/Asistencia de tecnologia.jpg" alt="">
         <div class="services-box">
           <h1>Asistencia en Tecnología</h1>
-          <h2>Estamos presentes ante inconvenientes en cualquiera de tus dispositivos pueda presentarte. Enviando
+          <h2>Estamos presentes ante cualquier inconveniente que tus dispositivos puedan presentar. Enviando
             la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma
             remota para reparar o reconfigurar sus dispositivos.
           </h2>
@@ -318,7 +322,218 @@
       </div>
 
     </div>
-    <div id="services-grid-mobile">
+
+
+<style>
+@media (max-width: 768px) {
+  #services-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+.services-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 50vw;
+  height: 50vw;
+}
+
+.services-row img {
+  width: 50%;
+  height: 50vw;
+  max-height: 50vw;
+}
+
+.services-box {
+  width: 50%;
+  height: 50vw;
+  max-height: 50vw;
+}
+}
+
+@media (min-width: 768px) {
+  #services-mobile {
+    display: none;
+  }
+}
+
+
+</style>
+
+
+
+    <div id="services-mobile">
+
+      <div class="services-row">
+        <img class="zoom-in" src="src/assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
+        <div class="services-box" id="vehicular-text">
+          <h1>Asistencia Vehicular</h1>
+          <h2>Circulá tranquilo con la tranquilidad de contar con la mejor asistencia las 24 hs. Servicios de urgencias
+            mecánicas y traslados en todo el país para cualquier tipo de vehículo: automóviles, motos, camiones, para
+            resolver cualquier desperfecto, siniestro o urgencia que pueda ocurrir.</h2>
+        </div>
+      </div>
+
+
+      <div class="services-row">
+        <div class="services-box" id="non-stop-text">
+          <h1>Asistencia Non Stop</h1>
+          <h2>Circulá tranquilo. Te asistimos en la vía pública con tu bicicleta, monopatín o cualquier dispositivo de
+            movilidad urbana. Te brindamos servicios para tu vehículo y para que puedas llegar a tu destino ante
+            averías, accidentes o robos. </h2>
+        </div>
+        <img src="src/assets/services/Asistencia non-stop.jpg" id="non-stop" alt="">
+      </div>
+
+      <div class="services-row">
+        <img src="src/assets/services/Asistencia hogar.jpg" id="hogar" alt="">
+        <div class="services-box" id="hogar-text">
+          <h1>Asistencia al Hogar</h1>
+          <h2>¿Tuviste una urgencia en tu casa? ¿Necesitás una reparación? En SOS ponemos a tu disposición una amplia
+            red de profesionales que llegarán a tu domicilio para solucionar cualquier problema de plomería,
+            electricidad, gas, cerrajería y mucho más. Nuestra red de prestadores te asistirá dentro de tu hogar para
+            que puedas seguir disfrutándolo como siempre.
+          </h2>
+        </div>
+      </div>
+
+      <div class="services-row">
+        <div class="services-box" id="nautica-text">
+          <h1>Asistencia Náutica</h1>
+          <h2>Ante cualquier inconveniente en la navegación, te brindamos el mejor servicio para la embarcación, desde
+            asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras, así como también el rescate de
+            todos los navegantes. Te cuidamos y acompañamos para que solo te preocupes por elegir el destino.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia Nautica.jpg" id="nautica" alt="">
+      </div>
+
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/Asistencia de salud 2.jpg" alt="">
+        <div class="services-box">
+          <h1>Asistencia de Salud</h1>
+          <h2>La mejor cobertura de servicios de salud, para asistirte ante cualquier inconveniente médico. Servicio de
+            ambulancia hasta el hospital más cercano, médicos especialistas, exámenes complementarios y mucho más para
+            que estés protegido ante cualquier hecho fortuito. averías, accidentes o robos.
+          </h2>
+        </div>
+
+
+      </div>
+
+      <div class="services-row">
+
+
+        <div class="services-box">
+          <h1>Asistencia en Tecnología</h1>
+          <h2>Estamos presentes ante cualquier problema que cualquiera de tus dispositivos pueda presentarte. Enviando
+            la problemática a través de un chat podrás ser asistido y orientado por un técnico especializado en forma
+            remota para arreglar o configurar sus dispositivos.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia de tecnologia.jpg" alt="">
+
+      </div>
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/Asistencia Viaje.jpg" alt="">
+        <div class="services-box">
+          <h1>Asistencia en Viaje</h1>
+          <h2>Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante
+            cualquier inconveniente que surja. Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al
+            domicilio: soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que sigas viajando
+            tranquilo en caso de tener un inconveniente con tu vehículo.
+          </h2>
+        </div>
+
+      </div>
+
+
+      
+      <div class="services-row">
+
+
+        <div class="services-box">
+          <h1>Asistencia a Mascotas</h1>
+          <h2>¿Tu mascota también necesita cuidado? Con nosotros, tu mascota cuenta con un amplio abanico de servicios
+            que incluye hasta consultas médicas veterinarias. También cuenta con asistencia de vacunación y envío de
+            medicamentos a domicilio después de un accidente o cirugía. Siempre limpio: cuida de tu mascota con el
+            servicio de baño, peluquería y pipeta antipulgas.
+          </h2>
+        </div>
+        <img src="src/assets/services/Asistencia a mascotas.jpg" alt="">
+
+      </div>
+
+
+      <div class="services-row">
+
+
+        <img src="src/assets/services/CONCIERGE SERVICE.jpg" alt="">
+
+        <div class="services-box">
+          <h1>Servicio de Concierge</h1>
+          <h2>Porque lo que más nos interesa es asistirte, te ayudamos a hacer tus reservaciones para restaurantes,
+            comprar entradas para eventos, preparar las vacaciones soñadas, concertar lo necesario para tus actividades
+            empresariales en el mundo entero, localizar artículos difíciles de encontrar, así como comprar y entregar
+            regalos.
+          </h2>
+        </div>
+        
+      </div>
+
+
+      <div class="services-row">
+
+        <div class="services-box">
+          <h1>Servicio Energy</h1>
+          <h2> Brindamos una solución integral a nuestros clientes al momento de necesitar un cambio de batería.
+            Integramos el servicio de asistencia a través de nuestros mecánicos especializados con un producto con la
+            más alta calidad, lo que nos permite ofrecer una garantía de 18 meses.
+          </h2>
+        </div>
+        <img src="src/assets/services/energy2.jpg" alt="">
+        
+      </div>
+
+      <div class="services-row">
+
+        <img src="src/assets/services/Telemedicina.jpg" alt="">
+        <div class="services-box">
+          <h1>Telemedicina</h1>
+          <h2>¿Necesitas hacer una consulta médica? Contamos con una app exclusiva para realizar tu consulta médica a
+            través de videollamada, sin traslados ni esperas. Es una opción rápida y confiable para que realices tu
+            consulta de salud u obtengas una segunda opinión médica, cuando lo necesites.
+          </h2>
+        </div>
+        
+      </div>
+
+
+      <div class="services-row">
+
+        <div class="services-box">
+          <h1>Tercera edad</h1>
+          <h2> Sabemos lo importante que es asistir en todo momento y cuando más lo necesitas. Por eso acercamos un
+            producto para nuestros adultos mayores que los acompañará a resolver situaciones donde requieran asistencia.
+          </h2>
+        </div>
+        <img src="src/assets/services/tercera edad.jpg" alt="">
+        
+      </div>
+
+
+    </div>
+
+
+
+  <!--  <div id="services-grid-mobile">
       <div class="row" id="services-row-1">
         <img class="zoom-in" src="src/assets/services/Asistencia Vehicular.jpg" id="vehicular" alt="">
         <div class="services-box" id="vehicular-text">
@@ -438,7 +653,7 @@
         </div> <img src="src/assets/services/tercera edad.jpg" alt="">
       </div>
 
-    </div>
+    </div>-->
 
 
   </section>
@@ -494,7 +709,7 @@
                     style="width: 100%; max-height: 100%;">
                 </div>
                 <div class="flip-card-back">
-                  <img src="src/content/Exported/Garantía.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                  <img src="src/content/Exported/Garantia.png" alt="" style="width: 100%; max-height: 100%;">
                 </div>
               </div>
             </div>
@@ -587,7 +802,7 @@
                     style="width: 100%; max-height: 100%;">
                 </div>
                 <div class="flip-card-back">
-                  <img src="src/content/Exported/Garantía.png" alt="Garantía" style="width: 100%; max-height: 100%;">
+                  <img src="src/content/Exported/Garantia.png" alt="Garantía" style="width: 100%; max-height: 100%;">
                 </div>
               </div>
             </div>
@@ -689,46 +904,195 @@
 </span>
 
 
-
 <div class="customer-logos">
-  <div class="slide"><img src="src/content/Logos de clientes/Amca.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Argos.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Audi.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Berkley.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/BMW.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Ducati.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/El norte.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Federacion.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Fiat.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Galeno.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/GCBA.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Integrity.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/IPER.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Iunigo.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Iveco.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Lexus.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Luz y Fuerza.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Land Rover.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mercantil Andina.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mercedes.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Meridional.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Metropolitana.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Mini.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Nacion.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Nativa.jpg"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Orbis.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Peugeot.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Prosegur.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Ram.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Rio Uruguay.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/santander.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Sura.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Toyota.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/TPC.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Victoria.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Volkswagen.PNG"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Volvo.png"></div>
-  <div class="slide"><img src="src/content/Logos de clientes/Zurich.PNG"></div>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <li class="splide__slide">
+          <img src="src/content/Logos de clientes/Amca.PNG">
+        </li>
+
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/Argos.PNG">
+  </li>
+
+    <li class="splide__slide">
+  <img src="src/content/Logos de clientes/Audi.PNG">
+  </li>
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/Berkley.PNG">
+    </li>
+
+  <li class="splide__slide">
+<img src="src/content/Logos de clientes/BMW.PNG">
+    </li>
+      <li class="splide__slide">
+        <img src="src/content/Logos de clientes/Caruso.PNG">
+    </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Chrysler.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Citroen.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Dodge.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/DS.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Ducati.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/El norte.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Federacion.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Fiat.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Galeno.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/GCBA.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Integrity.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/IPER.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Iunigo.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Iveco.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Jaguar.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/Jeep.PNG">
+          </li>
+      <li class="splide__slide">
+
+        <img src="src/content/Logos de clientes/La equitativa.PNG">
+    </li>
+
+    
+    <li class="splide__slide">
+      <img src="src/content/Logos de clientes/La Perseverancia.PNG">    </li>
+
+      <li class="splide__slide">
+        <img src="src/content/Logos de clientes/Land Rover.PNG">
+      </li>
+      <li class="splide__slide">
+          <img src="src/content/Logos de clientes/Lexus.PNG">
+        </li>
+        <li class="splide__slide">
+            <img src="src/content/Logos de clientes/La Holando.PNG">
+          </li>
+          <li class="splide__slide">
+              <img src="src/content/Logos de clientes/Luz y Fuerza.PNG">
+            </li>
+            <li class="splide__slide">
+                <img src="src/content/Logos de clientes/Mercantil Andina.PNG">
+              </li>
+              <li class="splide__slide">
+                  <img src="src/content/Logos de clientes/Mercedes.PNG">
+                </li>
+                <li class="splide__slide">
+                    <img src="src/content/Logos de clientes/Meridional.PNG">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="src/content/Logos de clientes/Metropolitana.png">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="src/content/Logos de clientes/Mini.PNG">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="src/content/Logos de clientes/Nacion.PNG">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="src/content/Logos de clientes/Nativa.jpg">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="src/content/Logos de clientes/Orbis.PNG">
+                              </li>
+                                <li class="splide__slide">
+                                  <img src="src/content/Logos de clientes/Peugeot.PNG">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="src/content/Logos de clientes/Prosegur.PNG">
+                                  </li>
+                                    <li class="splide__slide">
+                                        <img src="src/content/Logos de clientes/Ram.PNG">
+                                      </li>
+                                      <li class="splide__slide">
+                                          <img src="src/content/Logos de clientes/Rio Uruguay.PNG">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="src/content/Logos de clientes/Rivadavia.PNG">
+                                          </li>
+                                          <li class="splide__slide">
+                                                  <img src="src/content/Logos de clientes/San Cristobal.PNG">
+                                                </li>
+
+                                                  <li class="splide__slide">
+                                                          <img src="src/content/Logos de clientes/santander.png">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="src/content/Logos de clientes/Segurometal.PNG">
+                                                          </li>
+                                                          <li class="splide__slide">
+                                                              <img src="src/content/Logos de clientes/Smart.PNG">
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <img src="src/content/Logos de clientes/Sura.PNG">
+                                                              </li>
+                                                              <li class="splide__slide">
+                                                                  <img src="src/content/Logos de clientes/Toyota.PNG">
+                                                                </li>
+                                                                <li class="splide__slide">
+                                                                    <img src="src/content/Logos de clientes/TPC.PNG">
+                                                                  </li>
+                                                                  <li class="splide__slide">
+                                                                      <img src="src/content/Logos de clientes/Victoria.PNG">
+                                                                    </li>
+                                                                    <li class="splide__slide">
+                                                                        <img src="src/content/Logos de clientes/Volkswagen.PNG">
+                                                                      </li>
+                                                                      <li class="splide__slide">
+                                                                          <img src="src/content/Logos de clientes/Volvo.png">
+                                                                        </li>
+                                                                        <li class="splide__slide">
+                                                                            <img src="src/content/Logos de clientes/Zurich.PNG">
+                                                                          </li>
+
+  </div>
+</ul>
+    </div>
+  </div>
 
 </div>
 
@@ -900,7 +1264,7 @@ margin-top: 30px; margin-right: 20px; margin-bottom: 0px;
 <div class="modal fade" id="modalSOS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" style="width: 70vw;">
+    <div class="modal-content" style="width: 90vw;">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -1218,7 +1582,7 @@ margin-top: 30px; margin-right: 20px; margin-bottom: 0px;
 
 <div class="links">
   <button id="myBtn">Datos útiles</button>
-  <a href="form-comentarios.html">Consultas y sugerencias</a>
+  <a href="https://forms.gle/JDyaPrF6P22Dfwcx8">Consultas y sugerencias</a>
 </div>
 <div class="rights" style="padding-top: 1.5vw;">
   <p>
@@ -1312,7 +1676,6 @@ function cipav() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script src="src/burger.js"></script>
-
 </body>
 
 </html>
