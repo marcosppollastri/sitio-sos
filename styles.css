@@ -1215,11 +1215,7 @@ background-position: center;
 
 @media screen and (max-width: 768px) {
     .parallax {
-        background-image: url("parallax-mobile.jpg");
-         background-attachment: fixed !important;
-         background-size: contain;
-         height: 750px;
-         background-position: center;
+        background-image: url("src/assets/parallax-mobile.jpg");
 }
 }
 
